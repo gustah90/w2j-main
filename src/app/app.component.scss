@@ -1,30 +1,38 @@
-// HEADER
+
+
 .w2j__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
   background-color: #ffffff;
-  height: 140px;
-  width: 100vw;
+  max-height: 160px;
+  width: -webkit-fill-available;
   z-index: 3;
-  padding: 1rem;
+  padding: 2rem;
   border-bottom: 1px solid #284b63;
+  top: 0px;
+
+
+  .w2j__logo {
+    max-height: 150px;
+  }
 
   .w2j__header-navigation {
     display: flex;
     align-items: center;
 
     .w2j__header-title {
-      margin: 8px;
+      margin: 2vw;
       cursor: pointer;
       text-decoration: none;
       color: #353535;
       font-family: "Raleway", sans-serif;
-      font-size: x-large;
+      font-size: 2vw;
       font-weight: 400;
       letter-spacing: normal;
       opacity: 1;
+      text-align: center;
     }
 
     .w2j__contact {
@@ -40,9 +48,9 @@
       background-color: #284b63;
       border-radius: 100%;
       z-index: 4;
-      height: 2.4rem;
+      height: 3.5vw;
       padding: 4px;
-      margin: 4px;
+      margin: .5vw;
       cursor: pointer;
     }
     .w2j__language-icon:hover {
@@ -52,148 +60,17 @@
   }
 }
 
-// FIRST SECTION
-#w2j__top {
-  display: flex;
-  align-items: center;
-  position: absolute;
-
-  .w2j__top-background {
-    background-size: cover;
-    z-index: 1;
-    top: 140px;
-    position: absolute;
-    width: 100vw;
-    height: 860px;
+@media (max-width: 820px) {
+  .w2j__header {
+    max-height: 80px!important;
   }
-  .w2j__top-box {
-    background-color: rgba(53, 53, 53, 0.7);
-    z-index: 2;
-    box-sizing: content-box;
-    height: fit-content;
-    padding: 32px 40px 40px 16px;
-    margin: 30vh 10vh;
-    position: relative;
 
-    .w2j__top-title {
-      display: flex;
-      color: #ffffff;
-      opacity: 1;
-      font-size: x-large;
-      margin-bottom: 8px;
-      font-weight: 700;
-      font-family: "Roboto", sans-serif;
-    }
-    .w2j__top-content {
-      font-family: "Raleway", sans-serif;
-      font-size: medium;
-      font-weight: 400;
-      color: #ffffff;
-      opacity: 1;
-    }
-    .w2j__btn-know-more {
-      display: flex;
-      height: 40px;
-      padding: 8px 16px 8px 16px;
-      margin-top: 24px;
-      margin-left: 24px;
-      min-height: fit-content;
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      font-size: medium;
-      color: #ffffff;
-      background-color: #284b63;
-      border: 1px solid #ffffff;
-      opacity: 1;
-    }
-    .w2j__btn-know-more:hover {
-      background-color: #3c7092;
-      transform: scale(1.1);
-      transition: 0.4s;
-    }
+  .w2j__logo {
+    max-height: 64px!important;
+  }
+
+  .w2j__header-title {
+    font-size: 1vw!important;
+    margin: .3vw;
   }
 }
-
-// SECOND SECTION
-
-#w2j__second {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .w2j__second-background {
-    background: #ffffff;
-    opacity: 1;
-    z-index: 1;
-    top: 1000px;
-    position: absolute;
-    width: 100vw;
-    height: 860px;
-  }
-}
-.w2j__second-box {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-
-  .w2j__world-connections {
-    z-index: 2;
-    top: 1000px;
-    position: relative;
-    height: 500px;
-  }
-
-  .w2j__second-content-right {
-    font-family: "Raleway", sans-serif;
-    font-size: x-large;
-    font-weight: 400;
-    color: #000000;
-    opacity: 1;
-    z-index: 2;
-    top: 1050px;
-    position: relative;
-  }
-}
-.w2j__second-box-under {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-
-  .w2j__world-connections {
-    z-index: 2;
-    top: 1000px;
-    position: relative;
-    height: 500px;
-  }
-
-  .w2j__second-content-right {
-    font-family: "Raleway", sans-serif;
-    font-size: x-large;
-    font-weight: 400;
-    color: #000000;
-    opacity: 1;
-    z-index: 2;
-    top: 1050px;
-    position: relative;
-  }
-
-  .w2j__logistic {
-    z-index: 2;
-    top: 1510px;
-    position: relative;
-    height: 350px;
-  }
-
-  .w2j__second-content-left {
-    font-family: "Raleway", sans-serif;
-    font-size: x-large;
-    font-weight: 400;
-    color: #000000;
-    opacity: 1;
-    z-index: 2;
-    top: 1200px;
-    position: relative;
-  }
-}
-
-
