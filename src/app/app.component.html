@@ -1,14 +1,15 @@
 <header class="w2j__header">
-  <section class="w2j__logo">
+  <section>
     <img
-      src="../assets/images/logo_W2J.svg"
+      src="../assets/images/W2J_Logo.png"
       tabindex="0"
+      class="w2j__logo"
       attr.aria-label="Logotipo, representação de um globo terrestre dentro dos caracteres W2J com uma seta sobre a letra W apontando para a direita, outra seta abaixo da letra J apontando para esquerda e o termo comércio internacional abaixo da letra W"
     />
   </section>
   <section class="w2j__header-navigation">
-    <a href="#w2j__top" class="w2j__header-title">HOME</a>
-    <a href="#w2j__2-section" class="w2j__header-title">QUEM SOMOS</a>
+    <a href="#w2j__home" class="w2j__header-title">HOME</a>
+    <a href="#w2j__second" class="w2j__header-title">QUEM SOMOS</a>
     <a href="#w2j__3-section" class="w2j__header-title">SERVIÇOS</a>
     <a href="#w2j__footer" class="w2j__header-title w2j__contact">CONTATO</a>
   </section>
@@ -27,62 +28,8 @@
     />
   </section>
 </header>
-<main>
-  <section id="w2j__top" class="col-lg-8 col-md-7 col-sm-12 pl-0">
-    <img
-      class="w2j__top-background"
-      src="../assets/images/first-background.png"
-    />
-    <div class="w2j__top-box col-lg-9 col-md-7 col-sm-12">
-      <title class="w2j__top-title" tabindex="0">
-        SOMOS A W2J COMÉRCIO INTERNACIONAL
-      </title>
-      <span class="w2j__top-content" tabindex="0">
-        Uma empresa criada para prestar assessoria em comércio internacional.
-        Aqui nós apresentamos as melhores soluções em redução de custos para
-        suas importações, tanto na parte logística quanto na tributária, tudo de
-        forma legal e transparente. Somos uma equipe altamente qualificada e
-        comprometida em tornar viável e próspero seu negócio.
-      </span>
-      <button class="w2j__btn-know-more" href="#">SAIBA MAIS</button>
-    </div>
-  </section>
-  <section id="w2j__second">
-    <div class="w2j__second-background"></div>
-    <div class="w2j__second-box col-lg-11 col-md-7 col-sm-12 pl-0">
-      <img
-        src="../assets/images/world-connections.svg"
-        tabindex="0"
-        class="w2j__world-connections"
-      />
-      <span
-        class="w2j__second-content-right"
-        tabindex="0"
-      >
-        A W2J Comércio Internacional nasceu com objetivo de reduzir custos de
-        suas importações, estudando o assunto descobriu uma forma ética, segura
-        e eficiente de realizar operações de importação. E porque não estender
-        tais conhecimento ao mercado Nacional, proporcionando benefícios de
-        redução de custos e ampliando a fatia no mercado. Resolveu então
-        oferecer e compartilhar com o comércio internacional.
-      </span>
-    </div>
-    <div class="w2j__second-box-under col-lg-11 col-md-7 col-sm-12 pl-0">
-      <img
-        src="../assets/images/logistic.svg"
-        tabindex="0"
-        class="w2j__logistic"
-      />
-      <span
-        class="w2j__second-content-left col-lg-8 col-md-7 col-sm-12"
-        tabindex="0"
-      >
-        Na importação, os custos de impostos, taxas e despesas aduaneiras são
-        muito altos, principalmente o ICMS que é o maior custo da cadeia. O que
-        podemos e faremos é reduzir este e os demais custos. Quer saber como?
-        Entre em contato conosco e você vai se surpreender quando receber a
-        planilha comparativa com sua última importação.
-      </span>
-    </div>
-  </section>
-</main>
+
+<app-w2j-home></app-w2j-home>
+<app-w2j-us></app-w2j-us>
+<!-- <app-services></app-services> -->
+<!-- <app-contact></app-contact> -->
