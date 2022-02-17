@@ -19,7 +19,7 @@
     z-index: 2;
     text-align: left;
     padding-right: 4rem;
-    margin-top: 4rem;
+    margin-top: 8.5rem;
   }
 }
 .w2j__second-box-under {
@@ -66,9 +66,10 @@
   }
   .w2j__world-connections {
     margin-top: 1rem;
-    left: 140px;
-    height: 64vw !important;
-    width: 64vw;
+    margin: auto;
+    //left: 140px;
+    height: 72vw !important;
+    width: 72vw;
     margin-bottom: -24px !important;
   }
   .w2j__second-box-under {
@@ -77,25 +78,26 @@
   }
   .w2j__logistic {
     margin-top: 1rem;
-    height: 48vw !important;
-    width: 64vw !important;
+    margin: auto;
+    height: 56vw !important;
+    width: auto !important;
     right: unset !important;
-    left: 124px;
+    //left: 124px;
   }
   .w2j__second-content-right,
   .w2j__second-content-left {
     text-align: center !important;
     font-size: 3vw !important;
-    padding: 0.8rem !important;
+    padding: 1rem 2.8rem !important;
     margin-top: 0 !important;
   }
 }
 
 @media (max-width: 500px) {
   .w2j__world-connections {
-    left: 72px;
+    //left: 72px;
   }
   .w2j__logistic {
-    left: 56px;
+    //left: 56px;
   }
 }
