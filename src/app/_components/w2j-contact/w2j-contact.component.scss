@@ -3,53 +3,204 @@
 
   .w2j__top-section {
     display: flex;
-  }
-
-  span {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 4vw;
-    //padding-left: 4vw;
-  }
-
-  aside {
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vw;
-    padding: 0 4vw 2vw 4vw;
-    margin-top: -4px;
-  }
-  .w2j__mission {
-    display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+
+    .w2j__contact-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .w2j__mission {
+      justify-content: flex-start;
+      top: 184px;
+      padding: 0 1rem 2vw 4vw;
+
+      .w2j__mission-section,
+      .w2j__mission-text {
+        text-align: left;
+      }
+    }
+
+    .w2j__vision {
+      justify-content: flex-end;
+      padding: 0 4vw 2vw 0;
+
+      .w2j__vision-section,
+      .w2j__vision-text {
+        text-align: right;
+      }
+    }
   }
-  .w2j__vision {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+
+  .w2j__value-section {
+    text-align: center;
+    padding: 0 24vw 8vw 8vw;
   }
 
   .w2j__value {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .w2j__mission-section,
-  .w2j__mission-text {
-    text-align: left;
-  }
-  .w2j__vision-section,
-  .w2j__vision-text {
-    text-align: right;
-  }
-  .w2j__value-section {
     text-align: center;
-    padding: 0 16vw 4vw 16vw;
+    margin-top: 24vw;
+    justify-content: flex-end;
   }
 
-  .w2j__value {
+  .w2j__arrow-side {
+    position: absolute;
+    margin-top: -24px;
+    width: 32vw;
+    object-fit: cover;
+  }
+
+  .w2j__img-mission {
+    margin-top: -24px;
+    left: -2%;
+    object-position: 0px -80px;
+  }
+
+  .w2j__img-value {
+    right: -2%;
+    object-position: -72px 24px;
+    transform: rotate(180deg);
+  }
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+  }
+
+  aside {
+    font-weight: 600;
+    font-size: 1.8vw;
+    margin-top: 0;
+  }
+
+  // .arrow-background {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  // .arrow {
+  //   position: absolute;
+  //   opacity: 0.1;
+  // }
+
+  // .back {
+  //   margin-top: -166px;
+  //   transform: rotate(19deg);
+  // }
+
+  // .next {
+  //   transform: rotate(198deg);
+  //   margin-top: 0;
+  // }
+
+  @media (max-width: 768px) {
+    .w2j__top-section {
+      display: block !important;
+      justify-content: center !important;
+
+      .w2j__mission {
+        justify-content: center !important;
+        top: 0 !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__mission-section,
+        .w2j__mission-text {
+          text-align: center !important;
+        }
+      }
+
+      .w2j__vision {
+        justify-content: center !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__vision-section,
+        .w2j__vision-text {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .w2j__value-section {
+      padding: 4vw 16vw 8vw !important;
+    }
+
+    .w2j__value {
+      margin-top: 0 !important;
+      justify-content: center !important;
+    }
+
+    .w2j__arrow-side {
+      display: none;
+    }
+
+    aside {
+      font-size: 2.4vw;
+    }
+  }
+}
+
+.w2j__img-parallax {
+  background-image: url(../../../assets/images/scaled-logistic.png);
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// @media only screen and (max-device-width: 1366px) {
+//   .w2j__img-parallax {
+//     background-attachment: scroll;
+//   }
+// }
+
+.w2j__footer-container {
+  bottom: 0;
+  height: 104px;
+  width: 100vw;
+  background-color: #353535;
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .w2j__pb-logo {
+    height: 88px;
+  }
+
+  .w2j__address {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .w2j__text-address {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h6 {
+    color: #ffffff;
     text-align: center;
-    margin-top: 16vw;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .w2j__social-networks {
+    display: flex;
+  }
+
+  .w2j__btn-networks {
+    border: none;
+    background: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }

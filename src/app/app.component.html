@@ -1,4 +1,33 @@
-<header class="w2j__header">
+<!-- <div class="w2j__header-toggle" [class.opened]="isOpenMenu">
+  <img
+    src="../assets/images/W2J_Logo.png"
+    tabindex="0"
+    class="w2j__logo-menu-closed"
+    attr.aria-label="Logotipo, representação de um globo terrestre dentro dos caracteres W2J com uma seta sobre a letra W apontando para a direita, outra seta abaixo da letra J apontando para esquerda e o termo comércio internacional abaixo da letra W"
+  />
+
+  <button
+    type="button"
+    class="w2j__btn-to-expand"
+    (click)="openMenu()"
+    data-placement="bottom"
+    tabindex="0"
+  >
+    <img
+      src="../assets/icons/default/menu-hamburguer-icon.png"
+      tabindex="0"
+      class="w2j__toggle-menu"
+    />
+  </button>
+</div>
+<div class="w2j__lateral-menu">
+
+</div> -->
+
+<div
+  class="w2j__header-container"
+  [ngClass]="{ opened: isOpenMenu, closed: !isOpenMenu }"
+>
   <section>
     <img
       src="../assets/images/W2J_Logo.png"
@@ -8,28 +37,34 @@
     />
   </section>
   <section class="w2j__header-navigation">
-    <a href="#w2j__home" class="w2j__header-title">HOME</a>
-    <a href="#w2j__second" class="w2j__header-title">QUEM SOMOS</a>
-    <a href="#w2j__3-section" class="w2j__header-title">SERVIÇOS</a>
-    <a href="#w2j__footer" class="w2j__header-title w2j__contact">CONTATO</a>
+    <h4 href="#w2j__home" class="w2j__header-path">HOME</h4>
+    <h4 href="#w2j__know-us" class="w2j__header-path">QUEM SOMOS</h4>
+    <h4 href="#w2j__services" class="w2j__header-path">SERVIÇOS</h4>
+    <h4 href="#w2j__contact" class="w2j__header-path w2j__contact">CONTATO</h4>
   </section>
   <section class="w2j__languages">
-    <img
-      class="w2j__language-icon w2j__portuguese"
-      src="../assets/icons/default/brazil-flag.svg"
-    />
-    <img
-      class="w2j__language-icon w2j__spanish"
-      src="../assets/icons/default/spanish-flag.svg"
-    />
-    <img
-      class="w2j__language-icon w2j__english"
-      src="../assets/icons/default/usa-flag.svg"
-    />
+    <button class="w2j__btn-languages">
+      <img
+        class="w2j__language-icon w2j__portuguese"
+        src="../assets/icons/default/brazil-flag.svg"
+      />
+    </button>
+    <button class="w2j__btn-languages">
+      <img
+        class="w2j__language-icon w2j__spanish"
+        src="../assets/icons/default/spanish-flag.svg"
+      />
+    </button>
+    <button class="w2j__btn-languages">
+      <img
+        class="w2j__language-icon w2j__english"
+        src="../assets/icons/default/usa-flag.svg"
+      />
+    </button>
   </section>
-</header>
+</div>
 
-<!-- <app-w2j-home></app-w2j-home>
-<app-w2j-us></app-w2j-us> -->
-<!-- <app-services></app-services> -->
-<!-- <app-contact></app-contact> -->
+<app-w2j-home></app-w2j-home>
+<app-w2j-us></app-w2j-us>
+<app-w2j-services></app-w2j-services>
+<app-w2j-contact></app-w2j-contact>

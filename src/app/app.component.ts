@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'w2j';
+
+  isOpenMenu = false;
+
+  openMenu() {
+    this.isOpenMenu = !this.isOpenMenu;
+  }
 }
