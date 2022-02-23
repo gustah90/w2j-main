@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-w2j-contact',
   templateUrl: './w2j-contact.component.html',

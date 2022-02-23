@@ -1,55 +1,300 @@
 .w2j__contact__session {
   background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+
+  .w2j__arrow-background {
+    background-image: url(../../../assets/icons/light-grey/loading-arrows.png);
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
   .w2j__top-section {
     display: flex;
-  }
-
-  span {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 4vw;
-    //padding-left: 4vw;
-  }
-
-  aside {
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vw;
-    padding: 0 4vw 2vw 4vw;
-    margin-top: -4px;
-  }
-  .w2j__mission {
-    display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+
+    .w2j__contact-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .w2j__mission {
+      justify-content: flex-start;
+      top: 16vw;
+      padding: 0 1rem 2vw 4vw;
+
+      .w2j__mission-section,
+      .w2j__mission-text {
+        text-align: left;
+      }
+    }
+
+    .w2j__vision {
+      justify-content: flex-end;
+      padding: 0 4vw 2vw 0;
+
+      .w2j__vision-section,
+      .w2j__vision-text {
+        text-align: right;
+      }
+    }
   }
-  .w2j__vision {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+
+  .w2j__value-section {
+    text-align: center;
+    padding: 0 24vw 8vw 8vw;
   }
 
   .w2j__value {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .w2j__mission-section,
-  .w2j__mission-text {
-    text-align: left;
-  }
-  .w2j__vision-section,
-  .w2j__vision-text {
-    text-align: right;
-  }
-  .w2j__value-section {
     text-align: center;
-    padding: 0 16vw 4vw 16vw;
+    margin-top: 24vw;
+    justify-content: flex-end;
   }
 
-  .w2j__value {
+  .w2j__arrow-side {
+    position: absolute;
+    margin-top: 0;
+    width: 32vw;
+    object-fit: cover;
+  }
+
+  .w2j__img-mission {
+    left: -2%;
+    object-position: 0px -80px;
+  }
+
+  .w2j__img-value {
+    right: -4%;
+    object-position: -72px 24px;
+    transform: rotate(180deg);
+  }
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+  }
+
+  aside {
+    font-weight: 600;
+    font-size: 1.8vw;
+    margin-top: 0;
+  }
+
+  // @media (min-width: 1500px) {
+  //   .w2j__mission {
+  //     top: 420px !important;
+  //   }
+  // }
+
+  @media (max-width: 768px) {
+    .w2j__top-section {
+      display: block !important;
+      justify-content: center !important;
+
+      .w2j__mission {
+        justify-content: center !important;
+        top: 0 !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__mission-section,
+        .w2j__mission-text {
+          text-align: center !important;
+        }
+      }
+
+      .w2j__vision {
+        justify-content: center !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__vision-section,
+        .w2j__vision-text {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .w2j__value-section {
+      padding: 4vw 16vw 8vw !important;
+    }
+
+    .w2j__value {
+      margin-top: 0 !important;
+      justify-content: center !important;
+    }
+
+    .w2j__arrow-side {
+      display: none;
+    }
+
+    aside {
+      font-size: 2.4vw;
+    }
+  }
+}
+
+.w2j__img-parallax {
+  background-image: url(../../../assets/images/scaled-logistic.png);
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// @media only screen and (max-device-width: 1366px) {
+//   .w2j__img-parallax {
+//     background-attachment: scroll;
+//   }
+// }
+
+.w2j__background-form {
+  background-color: #ffffff;
+  background-image: url(../../../assets/images/world-map.png);
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .w2j__form-header {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 1rem;
+
+    .w2j__header-text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 56px;
+    }
+
+    .w2j__header-form-left {
+      text-align: start;
+    }
+
+    .w2j__header-form-right {
+      text-align: end;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .w2j__form-header {
+      padding: 1rem !important;
+    }
+
+    .w2j__header-text {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+    .w2j__header-form-left,
+    .w2j__header-form-right {
+      text-align: center !important;
+    }
+
+    .w2j__input-message {
+      height: 32vw !important;
+    }
+  }
+
+  .w2j__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+
+    .w2j__input-form {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: #eee;
+      opacity: 0.8;
+      border: 1px solid #284b63;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    label {
+      font-family: Raleway;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 42px;
+      text-align: start;
+      color: #284b63;
+      margin: 0 16px -8px;
+    }
+    .w2j__input-message {
+      height: 16vw;
+    }
+  }
+
+  .w2j__send-form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    .w2j__btn-send {
+      border: none;
+      border-radius: 8px;
+      padding: 1rem 4rem;
+      color: #ffffff;
+      background-color: #284b63;
+      margin: -16px 0 16px;
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+}
+
+.w2j__footer-container {
+  bottom: 0;
+  height: 104px;
+  width: 100vw;
+  background-color: #353535;
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .w2j__pb-logo {
+    height: 88px;
+  }
+
+  .w2j__address {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .w2j__text-address {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h6 {
+    color: #ffffff;
     text-align: center;
-    margin-top: 16vw;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .w2j__social-networks {
+    display: flex;
+  }
+
+  .w2j__btn-networks {
+    border: none;
+    background: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }

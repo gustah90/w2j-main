@@ -7,6 +7,7 @@ import { W2jHomeComponent } from './_components/w2j-home/w2j-home.component';
 import { W2jUsComponent } from './_components/w2j-us/w2j-us.component';
 import { W2jServicesComponent } from './_components/w2j-services/w2j-services.component';
 import { W2jContactComponent } from './_components/w2j-contact/w2j-contact.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,8 @@ import { W2jContactComponent } from './_components/w2j-contact/w2j-contact.compo
     W2jServicesComponent,
     W2jContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxMaskModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
