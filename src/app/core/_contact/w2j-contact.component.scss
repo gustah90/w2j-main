@@ -1,10 +1,11 @@
+//ARTICLE AREA
 .w2j__contact__session {
   background-color: #ffffff;
   position: relative;
   z-index: 2;
 
   .w2j__arrow-background {
-    background-image: url(../../../assets/icons/light-grey/loading-arrows.png);
+    background-image: url(../../../assets/icons/light-grey/w2j__round-arrows.png);
     background-attachment: inherit;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +34,7 @@
 
     .w2j__vision {
       justify-content: flex-end;
-      padding: 0 4vw 2vw 0;
+      padding: 1vw 4vw 2vw 0;
 
       .w2j__vision-section,
       .w2j__vision-text {
@@ -138,9 +139,10 @@
   }
 }
 
+//PARALLAX
 .w2j__img-parallax {
-  background-image: url(../../../assets/images/scaled-logistic.png);
-  min-height: 700px;
+  background-image: url(../../../assets/images/w2j__parallax-background.png);
+  min-height: 800px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,9 +154,10 @@
 //   }
 // }
 
+//FORM
 .w2j__background-form {
   background-color: #ffffff;
-  background-image: url(../../../assets/images/world-map.png);
+  background-image: url(../../../assets/images/w2j__world-map-background.png);
   background-attachment: inherit;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,10 +250,17 @@
       font-weight: bold;
       font-size: 24px;
       line-height: 42px;
+      cursor: pointer;
+    }
+
+    .w2j__btn-send:hover {
+      background-color: #3c7092;
+      border: 1px solid #000;
     }
   }
 }
 
+//FOOTER
 .w2j__footer-container {
   bottom: 0;
   height: 104px;

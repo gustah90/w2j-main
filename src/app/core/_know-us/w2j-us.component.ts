@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-w2j-us',
+  selector: 'w2j-know-us',
   templateUrl: './w2j-us.component.html',
   styleUrls: ['./w2j-us.component.scss']
 })

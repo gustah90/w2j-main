@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-w2j-home',
+  selector: 'w2j-home',
   templateUrl: './w2j-home.component.html',
   styleUrls: ['./w2j-home.component.scss']
 })
