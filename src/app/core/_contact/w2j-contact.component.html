@@ -1,0 +1,220 @@
+<!-- ARTICLE AREA -->
+<section class="w2j__contact__session">
+  <div class="w2j__arrow-background">
+    <div class="w2j__top-section">
+      <img
+        class="w2j__arrow-side w2j__img-mission"
+        src="../../../assets/icons/dark-grey/w2j__arrow.png"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        alt="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+        title="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+      />
+      <div class="w2j__contact-container w2j__mission col-md-5 pr-0">
+        <aside tabindex="0" class="w2j__mission-section">
+          <span class="w2j__mission-text">{{
+            "CONTACT.ARTICLE.MISSION-TITLE" | translate
+          }}</span
+          ><br />
+          {{ "CONTACT.ARTICLE.MISSION-CONTENT" | translate }}
+        </aside>
+      </div>
+
+      <div class="w2j__vision col-md-7 pl-0">
+        <aside tabindex="0" class="w2j__vision-section">
+          <span class="w2j__vision-text">{{
+            "CONTACT.ARTICLE.VISION-TITLE" | translate
+          }}</span
+          ><br />
+          {{ "CONTACT.ARTICLE.VISION-CONTENT" | translate }}
+        </aside>
+      </div>
+    </div>
+
+    <div class="w2j__contact-container w2j__value">
+      <aside tabindex="0" class="w2j__value-section">
+        <span class="w2j__value-text">{{
+          "CONTACT.ARTICLE.VALUE-TITLE" | translate
+        }}</span>
+        <br />
+        {{ "CONTACT.ARTICLE.VALUE-CONTENT" | translate }}
+      </aside>
+      <img
+        class="w2j__arrow-side w2j__img-value"
+        src="../../../assets/icons/dark-grey/w2j__arrow.png"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        alt="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+        title="{{ 'CONTACT.IMG.ARROW-LEFT' | translate }}"
+      />
+    </div>
+  </div>
+</section>
+
+<section
+  tabindex="0"
+  class="w2j__img-parallax"
+  tabindex="0"
+  attr.aria-label="{{ 'CONTACT.IMG.PARALLAX' | translate }}"
+></section>
+
+<!-- FORM -->
+<section class="w2j__form" id="w2j__contact">
+  <div class="w2j__background-form">
+    <div class="w2j__form-header">
+      <h4 class="w2j__header-text w2j__header-form-left" tabindex="0">
+        {{ "CONTACT.FORM.HEADER-LEFT" | translate }}
+      </h4>
+      <h4 class="w2j__header-text w2j__header-form-right" tabindex="0">
+        {{ "CONTACT.FORM.HEADER-RIGHT" | translate }}
+      </h4>
+    </div>
+    <form class="w2j__inputs">
+      <label for="name">{{ "CONTACT.FORM.NAME" | translate }}</label>
+      <input
+        class="w2j__input-form"
+        type="text"
+        id="name"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
+      />
+      <label id="phone" for="phone" tabindex="0">{{
+        "CONTACT.FORM.PHONE" | translate
+      }}</label>
+      <input
+        class="w2j__input-form"
+        type="text"
+        mask="(00) 0 0000-0000"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
+      />
+      <label for="email" tabindex="0">Email</label>
+      <input
+        class="w2j__input-form"
+        type="email"
+        id="email"
+        placeholder="exemplo@w2j.com"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
+      />
+      <label for="message" tabindex="0">{{
+        "CONTACT.FORM.MESSAGE" | translate
+      }}</label>
+      <textarea
+        class="w2j__input-form w2j__input-message"
+        type="text"
+        id="message"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
+      ></textarea>
+    </form>
+    <div class="w2j__send-form">
+      <button
+        class="w2j__btn-send"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.SEND-BUTTON-TOOLTIP' | translate }}"
+      >
+      {{ 'CONTACT.FORM.SEND-BUTTON' | translate }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section>
+  <footer class="w2j__footer-container">
+    <img
+      class="w2j__pb-logo"
+      src="../../../assets/images/w2j__logo-white.png"
+      tabindex="0"
+      data-toggle="tooltip"
+      data-placement="left"
+      alt="{{ 'CONTACT.IMG.WHITE-LOGO' | translate }}"
+      title="{{ 'CONTACT.IMG.WHITE-LOGO' | translate }}"
+    />
+    <div class="w2j__address">
+      <h6 class="mb-1 w2j__text-address">
+        <b>
+          {{ 'CONTACT.FOOTER.ADDRESS-1' | translate }}<br />
+          {{ 'CONTACT.FOOTER.ADDRESS-2' | translate }}</b
+        >
+      </h6>
+      <h6 class="mt-2 w2j__text-address">
+        <b>
+          {{ 'CONTACT.FOOTER.MESSAGE' | translate }}</b
+        >
+      </h6>
+      <h6 class="mt-3">
+        {{ 'CONTACT.FOOTER.ALL-RIGHTS' | translate }}
+      </h6>
+    </div>
+    <div class="w2j__social-networks">
+      <a href="https://www.facebook.com/">
+        <button
+          class="w2j__btn-networks"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="Ir à página do Facebook da W2J"
+        >
+          <img
+            class="w2j__network-icon w2j__facebook"
+            src="../../../assets/icons/light-grey/w2j__facebook.png"
+            tabindex="0"
+            data-toggle="tooltip"
+            data-placement="left"
+            alt="{{ 'CONTACT.IMG.NET-FB' | translate }}"
+            title="{{ 'CONTACT.IMG.NET-FB' | translate }}"
+          />
+        </button>
+      </a>
+      <a
+        href="https://www.instagram.com/
+        "
+      >
+        <button class="w2j__btn-networks">
+          <img
+            class="w2j__network-icon w2j__instagram"
+            src="../../../assets/icons/light-grey/w2j__instagram.png"
+            tabindex="0"
+            data-toggle="tooltip"
+            data-placement="left"
+            alt="{{ 'CONTACT.IMG.NET-IN' | translate }}"
+            title="{{ 'CONTACT.IMG.NET-IN' | translate }}"
+          />
+        </button>
+      </a>
+      <a
+        href="https://twitter.com/
+        "
+      >
+        <button class="w2j__btn-networks">
+          <img
+            class="w2j__network-icon w2j__twitter"
+            src="../../../assets/icons/light-grey/w2j__twitter.png"
+            tabindex="0"
+            data-toggle="tooltip"
+            data-placement="left"
+            alt="{{ 'CONTACT.IMG.NET-TW' | translate }}"
+            title="{{ 'CONTACT.IMG.NET-TW' | translate }}"
+          />
+        </button>
+      </a>
+    </div>
+  </footer>
+</section>

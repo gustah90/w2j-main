@@ -1,0 +1,95 @@
+{
+  "HEADER": {
+    "KNOW-US": "WHO WE ARE",
+    "SERVICES": "SERVICES",
+    "CONTACT": "CONTACT",
+    "BURGUER-MENU": "Open Lateral Menu",
+    "LOGO-LABEL": "Logo, representation of a globe within the characters W2J with an arrow above the letter W pointing to the right, another arrow below the letter J pointing to the left and the term international trade below the letter W",
+    "ANCHOR": {
+      "HOME": "Climb to the top",
+      "KNOW-US": "Go to the Who We Are section",
+      "SERVICES": "Go to the section about our Services",
+      "CONTACT": "Go to the Contact section"
+    },
+    "LANGUAGES": {
+      "PORTUGUESE": "Change language to Portuguese",
+      "SPANISH": "Change language to Spanish",
+      "ENGLISH": "Change language to English"
+    }
+  },
+
+  "HOME": {
+    "BACKGROUND": "Background image containing ships lined up on a pier",
+    "TITLE": "WE ARE THE W2J INTERNATIONAL COMMERCE",
+    "CONTENT": "A company created to provide consultant on international trades. Here we present the best cost reduction solutions for your imports, both in terms of logistics and taxation, all of it in a legal and transparent manner. We are a highly qualified team committed to making your business viable and prosperous.",
+    "BUTTON": "KNOW MORE",
+    "TOOLTIP": "Know more"
+  },
+
+  "KNOW": {
+    "TEXT": {
+      "WORLD": "W2J Comércio Internacional, was born with the objective of reducing the costs of its imports, studying the subject discovered an ethical, safe and efficient way to carry out import operations. And why not extend such knowledge to the national market, providing cost reduction benefits and increasing market share. He then decided to offer and share with international trade.",
+      "LOGISTIC": "In imports, the costs of taxes, fees and customs expenses are very high, mainly ICMS, which is the biggest cost in the chain. What we can and will do is reduce this and other costs. Want to know how? Contact us and you will be surprised when you receive the comparative spreadsheet with your last import."
+    },
+    "IMG": {
+      "WORLD": "Earth globe image",
+      "LOGISTIC": "Image representing logistics"
+    }
+  },
+
+  "SERVICES": {
+    "ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "ONE-LABEL": "Lorem ipsum",
+    "TWO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "TWO-LABEL": "Lorem ipsum",
+    "THREE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "THREE-LABEL": "Lorem ipsum",
+    "FOUR": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "FOUR-LABEL": "Lorem ipsum",
+    "FIVE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "FIVE-LABEL": "Lorem ipsum",
+    "SIX": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "SIX-LABEL": "Lorem ipsum"
+  },
+
+  "CONTACT": {
+    "ARTICLE": {
+      "VISION-TITLE": "Vision",
+      "VISION-CONTENT": "Obtain the trust and credibility of our customers, investors and partners as the best option for import and export operations in Brazil. In two years we will have our first branch abroad. Provide ethical, professional, intellectual and financial growth to our employees and partners.",
+      "MISSION-TITLE": "Mission",
+      "MISSION-CONTENT": "To be an integral part of the importing or exporting client, advising, managing their operations and enabling their business to be prosperous.",
+      "VALUE-TITLE": "Values",
+      "VALUE-CONTENT": "We are committed to transparency, quality in decision making, always aiming at the best results for our customers. We believe that transparency, simplicity and common sense guide better than sophistication and complexity. We always work to ensure the best operational solution for our customers."
+    },
+    "FORM": {
+      "HEADER-LEFT": "What determines the price is the consultation!",
+      "HEADER-RIGHT": "So come make an appointment with us!",
+      "NAME": "Name",
+      "PHONE": "Phone",
+      "MESSAGE": "Message",
+      "NAME-PLACEHOLDER": "Type your name here",
+      "PHONE-PLACEHOLDER": "Type your phone here",
+      "EMAIL-PLACEHOLDER": "example@w2j.com",
+      "MESSAGE-PLACEHOLDER": "Type your message here",
+      "SEND-BUTTON": "SEND",
+      "SEND-BUTTON-TOOLTIP": "Send your data and your message"
+    },
+    "FOOTER": {
+      "ADDRESS-1": "Street Lourenço Da Silva Cordeiro, 3478 - Centro",
+      "ADDRESS-2": "Rio de Janerio - RJ / 23405-234.<",
+      "MESSAGE": "Curabitur et sem est. Proin ac finibus quam. Integer sed tristique risus, sed tristique tellus.",
+      "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. All rights reserved."
+    },
+    "IMG": {
+      "ARROW-RIGHT": "Right arrow",
+      "ARROW-LEFT": "Left arrow",
+      "ARROW-BACKGROUND": "One arrow over the other in the background",
+      "PARALLAX": "Parallax image containing an airplane, a ship, containers and a truck",
+      "WORLD-MAP": "World map in gray color",
+      "WHITE-LOGO": "White Logo of W2J",
+      "NET-FB": "Go to Facebook page of W2J",
+      "NET-IN": "Go to Instagram page of W2J",
+      "NET-TW": "Go to Twitter page of W2J"
+    }
+  }
+}
