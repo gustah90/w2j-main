@@ -72,12 +72,16 @@
       "EMAIL-PLACEHOLDER": "ejemplo@w2j.com",
       "MESSAGE-PLACEHOLDER": "Escribe tu mensaje aquí",
       "SEND-BUTTON": "ENVIAR",
-      "SEND-BUTTON-TOOLTIP": "Enviar tus datos y la mensaje"
+      "SEND-BUTTON-TOOLTIP": "Enviar tus datos y la mensaje",
+      "MODAL": "Modal is open",
+      "MODAL-TEXT-1": "Informations send with success",
+      "MODAL-TEXT-2": "Soon we will return contact!",
+      "BTN-CLOSE": "Close modal"
     },
     "FOOTER": {
       "ADDRESS-1": "Calle Lourenço Da Silva Cordeiro, 3478 - Centro",
       "ADDRESS-2": "Rio de Janerio - RJ / 23405-234.",
-      "MESSAGE": "Curabitur et sem est. Proin ac finibus quam. Integer sed tristique risus, sed tristique tellus.",
+      "MESSAGE": "Con las piedras que lanzan voy a construir mi castillo.",
       "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. Todo los derechos reservados."
     },
     "IMG": {

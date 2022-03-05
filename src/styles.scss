@@ -8,3 +8,27 @@ body {
   margin: 0!important;
   overflow-x: hidden;
 }
+
+*:disabled {
+  opacity: .5;
+  cursor: default!important;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  background-color: #ffffc9;
+  border-color: #ce1126;
+}
+
+.w2j__is-invalid {
+  background-color: #ffffc9;
+  border-color: #ce1126!important;
+}
+
+.w2j__invalid-feedback {
+  color: #ce1126;
+  line-height: 1rem;
+  padding: 0 24px;
+  margin-top: -16px;
+}

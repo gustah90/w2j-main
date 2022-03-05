@@ -1,6 +1,7 @@
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +16,8 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { HttpLoaderFactory } from '../app/shared/util/http-loader-factory.i18n';
 import { Language } from '../app/shared/domain/enum/language.enum';
-
+import { ModalComponent } from './shared/components/modal/modal.component';
+import { FooterComponent } from './core/_footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,15 @@ import { Language } from '../app/shared/domain/enum/language.enum';
     W2jUsComponent,
     W2jServicesComponent,
     W2jContactComponent,
+    ModalComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgxMaskModule.forRoot(),
     ToastrModule.forRoot(),
     TranslateModule.forRoot({

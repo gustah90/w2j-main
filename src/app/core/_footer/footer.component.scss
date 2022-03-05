@@ -1,0 +1,48 @@
+//FOOTER
+.w2j__footer-container {
+  bottom: 0;
+  height: 104px;
+  width: 100vw;
+  background-color: #353535;
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .w2j__pb-logo {
+    height: 88px;
+  }
+
+  .w2j__address {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .w2j__text-address {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h6 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .w2j__social-networks {
+    display: flex;
+  }
+
+  .w2j__btn-networks {
+    border: none;
+    background: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
