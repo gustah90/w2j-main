@@ -73,10 +73,19 @@
       "MESSAGE-PLACEHOLDER": "Escribe tu mensaje aquí",
       "SEND-BUTTON": "ENVIAR",
       "SEND-BUTTON-TOOLTIP": "Enviar tus datos y la mensaje",
-      "MODAL": "Modal is open",
-      "MODAL-TEXT-1": "Informations send with success",
-      "MODAL-TEXT-2": "Soon we will return contact!",
-      "BTN-CLOSE": "Close modal"
+      "MODAL": "Modal abierto",
+      "MODAL-TEXT-1": "Informaciones enviadas con éxito.",
+      "MODAL-TEXT-2": "¡Pronto nos pondremos en contacto con usted!",
+      "BTN-CLOSE": "Cerrar modal",
+
+      "FEEDBACK": {
+        "NAME": "Por favor ingresa tu nombre completo.",
+        "NAME-LENGTH": "El nombre debe contener al menos 8 caracteres.",
+        "PHONE": "Ingrese su código de área internacional y después su número de teléfono.",
+        "EMAIL": "Por favor, informe a su correo electrónico.",
+        "MESSAGE": "Su mensaje debe contener al menos 16 caracteres.",
+        "MESSAGE-LENGTH": "Por favor ingrese su mensaje."
+      }
     },
     "FOOTER": {
       "ADDRESS-1": "Calle Lourenço Da Silva Cordeiro, 3478 - Centro",

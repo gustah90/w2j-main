@@ -76,7 +76,16 @@
       "MODAL": "Modal de feedback dos dados enviados está aberto",
       "MODAL-TEXT-1": "Informações enviadas com sucesso.",
       "MODAL-TEXT-2": "Em breve entraremos em contato!",
-      "BTN-CLOSE": "Fechar modal"
+      "BTN-CLOSE": "Fechar modal",
+
+      "FEEDBACK": {
+        "NAME": "Por favor, informe seu nome completo.",
+        "NAME-LENGTH": "O nome deve conter pelo menos 8 caracteres.",
+        "PHONE": "Por favor, informe seu número de DDD e, logo após, seu telefone.",
+        "EMAIL": "Por favor, informe seu email.",
+        "MESSAGE": "Sua mensagem deve conter no mínimo 16 caracteres.",
+        "MESSAGE-LENGTH": "Por favor, informe sua mensagem."
+      }
     },
     "FOOTER": {
       "ADDRESS-1": "Rua Lourenço Da Silva Cordeiro, 3478 - Centro",

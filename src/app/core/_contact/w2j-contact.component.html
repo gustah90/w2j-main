@@ -82,6 +82,7 @@
         class="w2j__input-form"
         type="text"
         minlength="8"
+        minlength="256"
         formControlName="name"
         required
         id="name"
@@ -100,11 +101,11 @@
         class="w2j__invalid-feedback"
       >
         <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['minlength']">
-          O nome deve conter pelo menos 8 caracteres.
+          {{ 'CONTACT.FORM.FEEDBACK.NAME-LENGTH' | translate }}
         </div>
 
         <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['required']">
-          Por favor, informe seu nome completo.
+          {{ 'CONTACT.FORM.FEEDBACK.NAME' | translate }}
         </div>
       </div>
 
@@ -131,7 +132,7 @@
         class="w2j__invalid-feedback"
       >
         <div tabindex="0" *ngIf="FormData.get('phone')?.errors?.['required']">
-          Por favor, informe seu número de DDD e, logo após, seu telefone.
+          {{ 'CONTACT.FORM.FEEDBACK.PHONE' | translate }}
         </div>
       </div>
 
@@ -159,7 +160,7 @@
         class="w2j__invalid-feedback"
       >
         <div tabindex="0" *ngIf="FormData.get('email')?.errors?.['required']">
-          Por favor, informe seu email.
+          {{ 'CONTACT.FORM.FEEDBACK.EMAIL' | translate }}
         </div>
       </div>
 
@@ -192,11 +193,11 @@
           tabindex="0"
           *ngIf="FormData.get('message')?.errors?.['minlength']"
         >
-          Sua mensagem deve conter no mínimo 16 caracteres.
+        {{ 'CONTACT.FORM.FEEDBACK.MESSAGE-LENGTH' | translate }}
         </div>
 
         <div tabindex="0" *ngIf="FormData.get('message')?.errors?.['required']">
-          Por favor, informe sua mensagem.
+          {{ 'CONTACT.FORM.FEEDBACK.MESSAGE' | translate }}
         </div>
       </div>
 

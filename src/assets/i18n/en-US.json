@@ -72,17 +72,26 @@
       "EMAIL-PLACEHOLDER": "example@w2j.com",
       "MESSAGE-PLACEHOLDER": "Type your message here",
       "SEND-BUTTON": "SEND",
-      "SEND-BUTTON-TOOLTIP": "Send your data and your message"
+      "SEND-BUTTON-TOOLTIP": "Send your data and your message",
+      "MODAL": "Modal is open",
+      "MODAL-TEXT-1": "Informations send with success.",
+      "MODAL-TEXT-2": "Soon we will return contact!",
+      "BTN-CLOSE": "Close modal",
+
+      "FEEDBACK": {
+        "NAME": "Please enter your full name.",
+        "NAME-LENGTH": "The name must contain at least 8 characters.",
+        "PHONE": "Please enter your international area code and then your telephone number.",
+        "EMAIL": "Please inform your email.",
+        "MESSAGE": "Your message must contain at least 16 characters.",
+        "MESSAGE-LENGTH": "Please enter your message."
+      }
     },
     "FOOTER": {
       "ADDRESS-1": "Street Lourenço Da Silva Cordeiro, 3478 - Centro",
       "ADDRESS-2": "Rio de Janerio - RJ / 23405-234.<",
       "MESSAGE": "I'll build my castle with the rocks that they throw me.",
-      "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. All rights reserved.",
-      "MODAL": "Modal está abierto",
-      "MODAL-TEXT-1": "Informaciones enviadas con éxito.",
-      "MODAL-TEXT-2": "¡Pronto nos pondremos en contacto con usted!",
-      "BTN-CLOSE": "Cerrar modal"
+      "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. All rights reserved."
     },
     "IMG": {
       "ARROW-RIGHT": "Right arrow",
