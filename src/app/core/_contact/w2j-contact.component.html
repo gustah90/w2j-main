@@ -1,5 +1,5 @@
 <!-- ARTICLE AREA -->
-<section class="w2j__contact__session">
+<section class="w2j__contact-session">
   <div class="w2j__arrow-background">
     <div class="w2j__top-section">
       <img
@@ -71,36 +71,78 @@
         {{ "CONTACT.FORM.HEADER-RIGHT" | translate }}
       </h4>
     </div>
-    <form class="w2j__inputs">
-      <label for="name">{{ "CONTACT.FORM.NAME" | translate }}</label>
+    <form
+      class="w2j__inputs"
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit(FormData.value)"
+
+    >
+      <label id="name" for="name">{{ "CONTACT.FORM.NAME" | translate }}</label>
       <input
         class="w2j__input-form"
         type="text"
+        minlength="8"
+        formControlName="name"
+        required
         id="name"
         tabindex="0"
+        minlength="8"
         data-toggle="tooltip"
         data-placement="left"
         title="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
         placeholder="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
       />
+      <div
+        *ngIf="
+          FormData.get('name')?.invalid &&
+          (FormData.get('name')?.dirty || FormData.get('name')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['minlength']">
+          O nome deve conter pelo menos 8 caracteres.
+        </div>
+
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['required']">
+          Por favor, informe seu nome completo.
+        </div>
+      </div>
+
       <label id="phone" for="phone" tabindex="0">{{
         "CONTACT.FORM.PHONE" | translate
       }}</label>
       <input
         class="w2j__input-form"
         type="text"
-        mask="(00) 0 0000-0000"
+        formControlName="phone"
+        required
+        mask="(00) 0 0000-0000 || (+00) 000 000 000"
         tabindex="0"
         data-toggle="tooltip"
         data-placement="left"
         title="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
         placeholder="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
       />
+      <div
+        *ngIf="
+          FormData.get('phone')?.invalid &&
+          (FormData.get('phone')?.dirty || FormData.get('phone')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('phone')?.errors?.['required']">
+          Por favor, informe seu número de DDD e, logo após, seu telefone.
+        </div>
+      </div>
+
       <label for="email" tabindex="0">Email</label>
       <input
         class="w2j__input-form"
-        type="email"
+        type="hidden"
         id="email"
+        type="text"
+        formControlName="email"
+        required
         placeholder="exemplo@w2j.com"
         tabindex="0"
         data-toggle="tooltip"
@@ -108,6 +150,19 @@
         title="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
         placeholder="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
       />
+
+      <div
+        *ngIf="
+          FormData.get('email')?.invalid &&
+          (FormData.get('email')?.dirty || FormData.get('email')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('email')?.errors?.['required']">
+          Por favor, informe seu email.
+        </div>
+      </div>
+
       <label for="message" tabindex="0">{{
         "CONTACT.FORM.MESSAGE" | translate
       }}</label>
@@ -115,106 +170,76 @@
         class="w2j__input-form w2j__input-message"
         type="text"
         id="message"
+        required
+        maxlength="256"
+        minlength="16"
+        formControlName="message"
         tabindex="0"
         data-toggle="tooltip"
         data-placement="left"
         title="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
         placeholder="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
       ></textarea>
-    </form>
-    <div class="w2j__send-form">
-      <button
-        class="w2j__btn-send"
-        tabindex="0"
-        data-toggle="tooltip"
-        data-placement="left"
-        title="{{ 'CONTACT.FORM.SEND-BUTTON-TOOLTIP' | translate }}"
+
+      <div
+        *ngIf="
+          FormData.get('message')?.invalid &&
+          (FormData.get('message')?.dirty || FormData.get('message')?.touched)
+        "
+        class="w2j__invalid-feedback"
       >
-      {{ 'CONTACT.FORM.SEND-BUTTON' | translate }}
-      </button>
-    </div>
+        <div
+          tabindex="0"
+          *ngIf="FormData.get('message')?.errors?.['minlength']"
+        >
+          Sua mensagem deve conter no mínimo 16 caracteres.
+        </div>
+
+        <div tabindex="0" *ngIf="FormData.get('message')?.errors?.['required']">
+          Por favor, informe sua mensagem.
+        </div>
+      </div>
+
+      <div class="w2j__send-form">
+        <button
+          class="w2j__btn-send submit"
+          type="submit"
+          value="submit"
+          tabindex="0"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="{{ 'CONTACT.FORM.SEND-BUTTON-TOOLTIP' | translate }}"
+          [disabled]="isLoading || FormData.invalid"
+          (click)="w2jSuccessModal.toggleModal()"
+        >
+          <span
+            *ngIf="isLoading"
+            class="spinner-border spinner-border-sm pb-2"
+          ></span>
+          <span *ngIf="!isLoading">{{
+            "CONTACT.FORM.SEND-BUTTON" | translate
+          }}</span>
+        </button>
+      </div>
+    </form>
   </div>
 </section>
 
-<!-- FOOTER -->
-<section>
-  <footer class="w2j__footer-container">
-    <img
-      class="w2j__pb-logo"
-      src="../../../assets/images/w2j__logo-white.png"
-      tabindex="0"
-      data-toggle="tooltip"
-      data-placement="left"
-      alt="{{ 'CONTACT.IMG.WHITE-LOGO' | translate }}"
-      title="{{ 'CONTACT.IMG.WHITE-LOGO' | translate }}"
-    />
-    <div class="w2j__address">
-      <h6 class="mb-1 w2j__text-address">
-        <b>
-          {{ 'CONTACT.FOOTER.ADDRESS-1' | translate }}<br />
-          {{ 'CONTACT.FOOTER.ADDRESS-2' | translate }}</b
-        >
-      </h6>
-      <h6 class="mt-2 w2j__text-address">
-        <b>
-          {{ 'CONTACT.FOOTER.MESSAGE' | translate }}</b
-        >
-      </h6>
-      <h6 class="mt-3">
-        {{ 'CONTACT.FOOTER.ALL-RIGHTS' | translate }}
-      </h6>
-    </div>
-    <div class="w2j__social-networks">
-      <a href="https://www.facebook.com/">
-        <button
-          class="w2j__btn-networks"
-          data-toggle="tooltip"
-          data-placement="left"
-          title="Ir à página do Facebook da W2J"
-        >
-          <img
-            class="w2j__network-icon w2j__facebook"
-            src="../../../assets/icons/light-grey/w2j__facebook.png"
-            tabindex="0"
-            data-toggle="tooltip"
-            data-placement="left"
-            alt="{{ 'CONTACT.IMG.NET-FB' | translate }}"
-            title="{{ 'CONTACT.IMG.NET-FB' | translate }}"
-          />
-        </button>
-      </a>
-      <a
-        href="https://www.instagram.com/
-        "
-      >
-        <button class="w2j__btn-networks">
-          <img
-            class="w2j__network-icon w2j__instagram"
-            src="../../../assets/icons/light-grey/w2j__instagram.png"
-            tabindex="0"
-            data-toggle="tooltip"
-            data-placement="left"
-            alt="{{ 'CONTACT.IMG.NET-IN' | translate }}"
-            title="{{ 'CONTACT.IMG.NET-IN' | translate }}"
-          />
-        </button>
-      </a>
-      <a
-        href="https://twitter.com/
-        "
-      >
-        <button class="w2j__btn-networks">
-          <img
-            class="w2j__network-icon w2j__twitter"
-            src="../../../assets/icons/light-grey/w2j__twitter.png"
-            tabindex="0"
-            data-toggle="tooltip"
-            data-placement="left"
-            alt="{{ 'CONTACT.IMG.NET-TW' | translate }}"
-            title="{{ 'CONTACT.IMG.NET-TW' | translate }}"
-          />
-        </button>
-      </a>
-    </div>
-  </footer>
-</section>
+<!-- MODAL -->
+<w2j-modal #w2jSuccessModal>
+  <img
+    class="w2j__ok"
+    src="../../../assets/icons/dark-grey/w2j__ok.svg"
+    tabindex="0"
+    data-toggle="tooltip"
+    data-placement="left"
+    aria-live="assertive"
+    role="alert"
+    title="{{ 'CONTACT.FORM.MODAL-TEXT-1' | translate }}"
+    alt="{{ 'CONTACT.FORM.MODAL-TEXT-1' | translate }}"
+  />
+  <h6 class="w2j__text-modal">
+    <span tabindex="0">{{ "CONTACT.FORM.MODAL-TEXT-1" | translate }}</span>
+    <p tabindex="0">{{ "CONTACT.FORM.MODAL-TEXT-2" | translate }}</p>
+  </h6>
+</w2j-modal>

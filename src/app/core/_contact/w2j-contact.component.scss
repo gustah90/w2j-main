@@ -1,5 +1,5 @@
 //ARTICLE AREA
-.w2j__contact__session {
+.w2j__contact-session {
   background-color: #ffffff;
   position: relative;
   z-index: 2;
@@ -148,11 +148,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-// @media only screen and (max-device-width: 1366px) {
-//   .w2j__img-parallax {
-//     background-attachment: scroll;
-//   }
-// }
+
+@media only screen and (max-device-width: 1366px) {
+  .w2j__img-parallax {
+    min-height: 500px;
+    //background-attachment: scroll;
+  }
+}
 
 //FORM
 .w2j__background-form {
@@ -231,6 +233,7 @@
     }
     .w2j__input-message {
       height: 16vw;
+      resize: none;
     }
   }
 
@@ -250,61 +253,28 @@
       font-weight: bold;
       font-size: 24px;
       line-height: 42px;
+      height: 72px;
       cursor: pointer;
     }
 
-    .w2j__btn-send:hover {
+    .w2j__btn-send:not([disabled]):hover {
       background-color: #3c7092;
       border: 1px solid #000;
     }
   }
 }
 
-//FOOTER
-.w2j__footer-container {
-  bottom: 0;
-  height: 104px;
-  width: 100vw;
-  background-color: #353535;
-  padding: 0.5rem 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+//MODAL
 
-  .w2j__pb-logo {
-    height: 88px;
-  }
+.w2j__ok {
+  width: 150px;
+  margin: auto;
+}
 
-  .w2j__address {
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .w2j__text-address {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  h6 {
-    color: #ffffff;
-    text-align: center;
-    font-weight: 400;
-    font-size: 11px;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 1px;
-  }
-
-  .w2j__social-networks {
-    display: flex;
-  }
-
-  .w2j__btn-networks {
-    border: none;
-    background: none;
-    padding: 1rem;
-    cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
+.w2j__text-modal {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4vw;
 }
