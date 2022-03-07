@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -12,7 +12,7 @@ import { MailService } from '../../../app/mail.service';
   selector: 'w2j-contact',
   templateUrl: './w2j-contact.component.html',
   styleUrls: ['./w2j-contact.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom,
+
 })
 export class W2jContactComponent implements OnInit {
   FormData!: FormGroup;
@@ -23,16 +23,16 @@ export class W2jContactComponent implements OnInit {
   ngOnInit(): void {
     this.FormData = this.formBuilder.group({
       name: new FormControl('', [Validators.required, Validators.minLength(8)]),
-      // phone: new FormControl('', [Validators.required]),
-      // email: new FormControl(
-      //   '',
-      //   Validators.compose([Validators.required, Validators.email])
-      // ),
-      // message: new FormControl('', [
-      //   Validators.required,
-      //   Validators.minLength(16),
-      //   Validators.maxLength(256),
-      // ]),
+      phone: new FormControl('', [Validators.required]),
+      email: new FormControl(
+        '',
+        Validators.compose([Validators.required, Validators.email])
+      ),
+      message: new FormControl('', [
+        Validators.required,
+        Validators.minLength(16),
+        Validators.maxLength(256),
+      ]),
     });
   }
 
