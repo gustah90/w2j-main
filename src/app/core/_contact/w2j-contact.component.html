@@ -71,8 +71,12 @@
         {{ "CONTACT.FORM.HEADER-RIGHT" | translate }}
       </h4>
     </div>
+    <form
+      class="w2j__inputs"
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit(FormData.value)"
 
-    <form class="w2j__inputs" [formGroup]="w2jForm" (ngSubmit)="onSubmit()">
+    >
       <label id="name" for="name">{{ "CONTACT.FORM.NAME" | translate }}</label>
       <input
         class="w2j__input-form"
@@ -90,21 +94,21 @@
       />
       <div
         *ngIf="
-          w2jForm.get('name')?.invalid &&
-          (w2jForm.get('name')?.dirty || w2jForm.get('name')?.touched)
+          FormData.get('name')?.invalid &&
+          (FormData.get('name')?.dirty || FormData.get('name')?.touched)
         "
         class="w2j__invalid-feedback"
       >
-        <div tabindex="0" *ngIf="w2jForm.get('name')?.errors?.['minlength']">
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['minlength']">
           O nome deve conter pelo menos 8 caracteres.
         </div>
 
-        <div tabindex="0" *ngIf="w2jForm.get('name')?.errors?.['required']">
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['required']">
           Por favor, informe seu nome completo.
         </div>
       </div>
 
-      <label id="phone" for="phone" tabindex="0">{{
+      <!-- <label id="phone" for="phone" tabindex="0">{{
         "CONTACT.FORM.PHONE" | translate
       }}</label>
       <input
@@ -121,17 +125,17 @@
       />
       <div
         *ngIf="
-          w2jForm.get('phone')?.invalid &&
-          (w2jForm.get('phone')?.dirty || w2jForm.get('phone')?.touched)
+          FormData.get('phone')?.invalid &&
+          (FormData.get('phone')?.dirty || FormData.get('phone')?.touched)
         "
         class="w2j__invalid-feedback"
       >
-        <div tabindex="0" *ngIf="w2jForm.get('phone')?.errors?.['required']">
+        <div tabindex="0" *ngIf="FormData.get('phone')?.errors?.['required']">
           Por favor, informe seu número de DDD e, logo após, seu telefone.
         </div>
-      </div>
+      </div> -->
 
-      <label for="email" tabindex="0">Email</label>
+      <!-- <label for="email" tabindex="0">Email</label>
       <input
         class="w2j__input-form"
         type="hidden"
@@ -149,12 +153,12 @@
 
       <div
         *ngIf="
-          w2jForm.get('email')?.invalid &&
-          (w2jForm.get('email')?.dirty || w2jForm.get('email')?.touched)
+          FormData.get('email')?.invalid &&
+          (FormData.get('email')?.dirty || FormData.get('email')?.touched)
         "
         class="w2j__invalid-feedback"
       >
-        <div tabindex="0" *ngIf="w2jForm.get('email')?.errors?.['required']">
+        <div tabindex="0" *ngIf="FormData.get('email')?.errors?.['required']">
           Por favor, informe seu email.
         </div>
       </div>
@@ -179,19 +183,22 @@
 
       <div
         *ngIf="
-          w2jForm.get('message')?.invalid &&
-          (w2jForm.get('message')?.dirty || w2jForm.get('message')?.touched)
+          FormData.get('message')?.invalid &&
+          (FormData.get('message')?.dirty || FormData.get('message')?.touched)
         "
         class="w2j__invalid-feedback"
       >
-        <div tabindex="0" *ngIf="w2jForm.get('message')?.errors?.['minlength']">
+        <div
+          tabindex="0"
+          *ngIf="FormData.get('message')?.errors?.['minlength']"
+        >
           Sua mensagem deve conter no mínimo 16 caracteres.
         </div>
 
-        <div tabindex="0" *ngIf="w2jForm.get('message')?.errors?.['required']">
+        <div tabindex="0" *ngIf="FormData.get('message')?.errors?.['required']">
           Por favor, informe sua mensagem.
         </div>
-      </div>
+      </div> -->
 
       <div class="w2j__send-form">
         <button
@@ -202,8 +209,8 @@
           data-toggle="tooltip"
           data-placement="left"
           title="{{ 'CONTACT.FORM.SEND-BUTTON-TOOLTIP' | translate }}"
+          [disabled]="isLoading || FormData.invalid"
           (click)="w2jSuccessModal.toggleModal()"
-          [disabled]="isLoading || w2jForm.invalid"
         >
           <span
             *ngIf="isLoading"

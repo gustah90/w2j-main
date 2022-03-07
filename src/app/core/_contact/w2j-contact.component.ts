@@ -1,67 +1,56 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
   FormGroup,
   Validators,
+  NgForm,
 } from '@angular/forms';
+import { MailService } from '../../../app/mail.service';
 
 @Component({
   selector: 'w2j-contact',
   templateUrl: './w2j-contact.component.html',
   styleUrls: ['./w2j-contact.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class W2jContactComponent implements OnInit {
-  w2jForm!: FormGroup;
-  name: FormControl = new FormControl('', [
-    Validators.required,
-    Validators.minLength(8),
-  ]);
-  phone: FormControl = new FormControl('', [
-    Validators.required,
-    Validators.minLength(16),
-  ]);
-  email: FormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-  message: FormControl = new FormControl('', [
-    Validators.required,
-    Validators.minLength(16),
-    Validators.maxLength(256),
-  ]);
+  FormData!: FormGroup;
   isLoading: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.w2jForm = this.formBuilder.group({
-      name: this.name,
-      phone: this.phone,
-      email: this.email,
-      message: this.message,
-    });
-  }
+  constructor(private formBuilder: FormBuilder, private mail: MailService) {}
 
   ngOnInit(): void {
-    this.w2jForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(8)]],
-      phone: ['', [Validators.required]],
-      email: ['', [Validators.required, Validators.email]],
-      message: [
-        '',
-        [Validators.required,
-        Validators.minLength(16),
-        Validators.maxLength(256),
-      ]],
+    this.FormData = this.formBuilder.group({
+      name: new FormControl('', [Validators.required, Validators.minLength(8)]),
+      // phone: new FormControl('', [Validators.required]),
+      // email: new FormControl(
+      //   '',
+      //   Validators.compose([Validators.required, Validators.email])
+      // ),
+      // message: new FormControl('', [
+      //   Validators.required,
+      //   Validators.minLength(16),
+      //   Validators.maxLength(256),
+      // ]),
     });
   }
 
-  get w2jFormControls() {
-    return this.w2jForm.controls;
-  }
-
-  onSubmit() {
+  onSubmit(FormData: any) {
     this.isLoading = true;
-    this.w2jForm.reset();
+    this.FormData.reset();
+    console.log(FormData, this.isLoading, 1234567890);
+
+    this.mail.PostMessage(FormData).subscribe(
+      (response) => {
+        //location.href = 'https://facebook.com';
+        console.log({ FormData });
+        console.log(response);
+      },
+      (error) => {
+        console.warn(error.responseText);
+        console.log({ error });
+      }
+    );
   }
 }
