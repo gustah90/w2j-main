@@ -8,7 +8,6 @@
     border-left: 1px solid #284b63;
     border-bottom: unset;
     max-height: unset;
-    transition: all 0.2s ease-in-out;
     position: fixed;
 
     .w2j__header-lateral {
@@ -28,13 +27,12 @@
       flex-direction: column;
 
       .w2j__language-icon {
-        height: 7vw;
+        height: 6vw;
         margin: 2vw;
       }
     }
   }
 }
-
 
 @media (max-width: 768px) {
   .w2j__header-toggle.opened {
@@ -45,6 +43,7 @@
 
   .w2j__header-toggle.closed {
     height: 50px;
+    border-bottom: 1px solid #284b63;
   }
 }
 
@@ -63,6 +62,7 @@
     justify-content: center;
     padding: 32px;
     align-items: center;
+    border-bottom: 1px solid #284b63;
 
     .w2j__logo-menu-closed {
       width: 2vw;
@@ -72,7 +72,7 @@
 
   .w2j__btn-to-expand {
     border: 2px solid #386786;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 4px;
     background: none;
     cursor: pointer;
@@ -80,13 +80,12 @@
     z-index: 4;
 
     .w2j__toggle-menu {
-      width: 2rem;
+      width: 1.5rem;
     }
   }
 
   .w2j__btn-to-expand:hover {
     transform: scale(1.1) !important;
-    transition: all 0.2s ease-in-out;
   }
 }
 
@@ -96,7 +95,7 @@
   align-items: center;
   position: fixed;
   background-color: #ffffff;
-  max-height:116px;
+  max-height: 116px;
   width: 100vw;
   z-index: 3;
   padding: 2rem;
@@ -122,11 +121,11 @@
       letter-spacing: normal;
       opacity: 1;
       text-align: center;
+      transition: all 0.4s ease-in-out;
     }
 
     .w2j__header-path:hover {
       transform: scale(1.1);
-      transition: all 0.4s ease-in-out;
     }
 
     .w2j__contact {
@@ -150,11 +149,11 @@
       height: 3.5vw;
       padding: 4px;
       cursor: pointer;
+      transition: all 0.4s ease-in-out;
     }
 
     .w2j__language-icon:hover {
       transform: scale(1.2);
-      transition: all 0.4s ease-in-out;
     }
   }
 }
@@ -170,6 +169,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -48px;
 
   .w2j__btn-networks {
     border: none;
@@ -178,6 +178,10 @@
     padding: 0.5rem;
     margin: 1rem;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .w2j__btn-networks:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -186,9 +190,9 @@
     justify-content: flex-end;
   }
 
-  .w2j__btn-to-expand {
-    margin-left: 35vw !important;
-  }
+  // .w2j__btn-to-expand {
+  //   //margin-left: 35vw !important;
+  // }
 
   .w2j__logo {
     max-height: 54px !important;
@@ -205,9 +209,13 @@
   h6 {
     font-size: 0.6rem !important;
   }
+
+  img {
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .w2j__address {
     display: none;
   }
@@ -222,10 +230,10 @@
 
   .w2j__header-container.opened {
     display: flex !important;
+    justify-content: center;
   }
   .w2j__header-lateral {
     display: flex;
     flex-direction: unset !important;
   }
 }
-

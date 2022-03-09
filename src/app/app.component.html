@@ -33,7 +33,8 @@
   class="w2j__header-container"
   [ngClass]="{ opened: isOpenMenu, closed: !isOpenMenu }"
 >
-  <section>
+<div class="w2j__header-lateral">
+  <section style="margin: auto;">
     <img
       src="../assets/images/w2j__logo.png"
       tabindex="0"
@@ -45,7 +46,7 @@
     />
   </section>
 
-  <div class="w2j__header-lateral">
+
     <section class="w2j__header-navigation">
       <a
         href="#w2j__home"
