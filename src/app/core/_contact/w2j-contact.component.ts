@@ -12,7 +12,6 @@ import { MailService } from '../../../app/mail.service';
   selector: 'w2j-contact',
   templateUrl: './w2j-contact.component.html',
   styleUrls: ['./w2j-contact.component.scss'],
-
 })
 export class W2jContactComponent implements OnInit {
   FormData!: FormGroup;
@@ -22,7 +21,11 @@ export class W2jContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.FormData = this.formBuilder.group({
-      name: new FormControl('', [Validators.required, Validators.minLength(8)]),
+      name: new FormControl('', [
+        Validators.required,
+        Validators.minLength(8),
+        Validators.maxLength(256),
+      ]),
       phone: new FormControl('', [Validators.required]),
       email: new FormControl(
         '',
@@ -43,7 +46,7 @@ export class W2jContactComponent implements OnInit {
 
     this.mail.PostMessage(FormData).subscribe(
       (response) => {
-        //location.href = 'https://facebook.com';
+        //location.href = 'https://formspree.io/f/xknybpyo';
         console.log({ FormData });
         console.log(response);
       },

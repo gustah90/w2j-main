@@ -39,7 +39,7 @@ import { MailService } from './mail.service';
     NgxMaskModule.forRoot(),
     ToastrModule.forRoot(),
     TranslateModule.forRoot({
-      defaultLanguage: Language.ENGLISH,
+      defaultLanguage: Language.PORTUGUESE,
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,

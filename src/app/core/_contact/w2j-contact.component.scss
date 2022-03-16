@@ -70,9 +70,13 @@
   }
 
   .w2j__img-value {
-    right: -4%;
-    object-position: -72px 24px;
+    right: 0%;
+    object-position: -120px -16px;
     transform: rotate(180deg);
+
+    @media (min-width: 1680px) {
+      object-position: -190px -16px;
+    }
   }
 
   span {
@@ -85,6 +89,28 @@
     font-weight: 600;
     font-size: 1.8vw;
     margin-top: 0;
+
+    @media (min-width: 1680px) {
+      margin-top: 50px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .w2j__top-section {
+      display: block !important;
+    }
+
+    .w2j__vision  {
+      margin-top: -120px !important;
+    }
+
+    .w2j__vision-section {
+      padding-left: 240px !important;
+    }
+
+    .w2j__mission-section {
+      padding-right: 320px !important;
+    }
   }
 
   // @media (min-width: 1500px) {
@@ -176,6 +202,11 @@
       font-weight: normal;
       font-size: 40px;
       line-height: 56px;
+
+      @media (min-width: 1800px) {
+        font-size: 100px !important;
+        line-height: 100px !important;
+      }
     }
 
     .w2j__header-form-left {
@@ -220,6 +251,10 @@
       border: 1px solid #284b63;
       border-radius: 8px;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+      @media (max-width: 425px) {
+        margin: 1rem -16px !important;
+      }
     }
 
     label {
@@ -230,6 +265,12 @@
       text-align: start;
       color: #284b63;
       margin: 0 16px -8px;
+
+      @media (max-width: 425px) {
+        font-size: 24px !important;
+        line-height: 42px !important;
+        margin: -16px;
+      }
     }
     .w2j__input-message {
       height: 16vw;
@@ -255,6 +296,10 @@
       line-height: 42px;
       height: 72px;
       cursor: pointer;
+
+      @media (max-width: 425px) {
+        padding: 0.5rem 2rem !important;
+      }
     }
 
     .w2j__btn-send:not([disabled]):hover {

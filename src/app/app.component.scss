@@ -8,8 +8,8 @@
     border-left: 1px solid #284b63;
     border-bottom: unset;
     max-height: unset;
-    transition: all 0.2s ease-in-out;
     position: fixed;
+    transition: width ease-in-out 0.2s;
 
     .w2j__header-lateral {
       display: flex;
@@ -28,13 +28,12 @@
       flex-direction: column;
 
       .w2j__language-icon {
-        height: 7vw;
-        margin: 2vw;
+        height: 5vw;
+        margin: 0.5rem;
       }
     }
   }
 }
-
 
 @media (max-width: 768px) {
   .w2j__header-toggle.opened {
@@ -45,6 +44,7 @@
 
   .w2j__header-toggle.closed {
     height: 50px;
+    border-bottom: 1px solid #284b63;
   }
 }
 
@@ -61,8 +61,9 @@
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 32px;
+    padding: 32px 16px;
     align-items: center;
+    border-bottom: 1px solid #284b63;
 
     .w2j__logo-menu-closed {
       width: 2vw;
@@ -72,36 +73,40 @@
 
   .w2j__btn-to-expand {
     border: 2px solid #386786;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 4px;
     background: none;
     cursor: pointer;
     transition: ease-in-out 0.2s;
     z-index: 4;
+    margin-right: 16px;
 
     .w2j__toggle-menu {
-      width: 2rem;
+      width: 1.5rem;
     }
   }
 
   .w2j__btn-to-expand:hover {
     transform: scale(1.1) !important;
-    transition: all 0.2s ease-in-out;
   }
 }
 
 .w2j__header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: fixed;
   background-color: #ffffff;
-  max-height:116px;
+  max-height: 116px;
   width: 100vw;
   z-index: 3;
   padding: 2rem;
   border-bottom: 1px solid #284b63;
   top: 0px;
+
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
 
   .w2j__logo {
     max-height: 88px;
@@ -112,7 +117,7 @@
     align-items: center;
 
     .w2j__header-path {
-      margin: 2vw;
+      margin: 1vw;
       cursor: pointer;
       text-decoration: none;
       color: #353535;
@@ -122,11 +127,11 @@
       letter-spacing: normal;
       opacity: 1;
       text-align: center;
+      transition: all 0.4s ease-in-out;
     }
 
     .w2j__header-path:hover {
       transform: scale(1.1);
-      transition: all 0.4s ease-in-out;
     }
 
     .w2j__contact {
@@ -150,11 +155,11 @@
       height: 3.5vw;
       padding: 4px;
       cursor: pointer;
+      transition: all 0.4s ease-in-out;
     }
 
     .w2j__language-icon:hover {
       transform: scale(1.2);
-      transition: all 0.4s ease-in-out;
     }
   }
 }
@@ -170,24 +175,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -48px;
 
   .w2j__btn-networks {
     border: none;
-    background: #000;
-    border-radius: 50px;
+    background: none;
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .w2j__btn-networks:hover {
+    transform: scale(1.2);
   }
 }
 
 @media (max-width: 768px) {
   .w2j__header-toggle {
     justify-content: flex-end;
-  }
-
-  .w2j__btn-to-expand {
-    margin-left: 35vw !important;
   }
 
   .w2j__logo {
@@ -198,12 +203,21 @@
   }
 
   .w2j__header-path {
-    font-size: 3.5vw !important;
+    font-size: 2.5vw !important;
     margin: 1vw;
   }
 
   h6 {
     font-size: 0.6rem !important;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .w2j__network-icon {
+    width: 5vw;
+    margin-top: -4px;
   }
 }
 
@@ -222,6 +236,7 @@
 
   .w2j__header-container.opened {
     display: flex !important;
+    justify-content: center;
   }
   .w2j__header-lateral {
     display: flex;
@@ -229,3 +244,16 @@
   }
 }
 
+@media (max-width: 425px) {
+  .w2j__language-icon {
+    height: 8vw !important;
+  }
+
+  .w2j__network-icon {
+    width: 8vw !important;
+  }
+
+  .w2j__header-path {
+    font-size: 3.5vw !important;
+  }
+}

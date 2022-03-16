@@ -100,3 +100,9 @@
     padding: 4px 8px !important;
   }
 }
+
+@media (max-width: 320px) {
+  .w2j__home-box {
+    top: 80px !important;
+  }
+}

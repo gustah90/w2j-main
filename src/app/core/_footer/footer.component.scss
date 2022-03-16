@@ -33,13 +33,18 @@
 
   .w2j__social-networks {
     display: flex;
+    align-items: center;
   }
 
   .w2j__btn-networks {
     border: none;
     background: none;
-    padding: 1rem;
+    padding: .5rem;
     cursor: pointer;
+  }
+
+  .w2j__network-icon {
+    width: 4vw;
   }
 
   @media (max-width: 768px) {
