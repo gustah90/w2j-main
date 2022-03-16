@@ -38,18 +38,18 @@
   },
 
   "SERVICES": {
-    "ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "ONE-LABEL": "Lorem ipsum",
-    "TWO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "TWO-LABEL": "Lorem ipsum",
-    "THREE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "THREE-LABEL": "Lorem ipsum",
-    "FOUR": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "FOUR-LABEL": "Lorem ipsum",
-    "FIVE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "FIVE-LABEL": "Lorem ipsum",
-    "SIX": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "SIX-LABEL": "Lorem ipsum"
+    "ONE": "Equipo de profesionales experimentados en el seguimiento de propuesta de importación por encargo.",
+    "ONE-LABEL": "Entrega a tiempo",
+    "TWO": "Análisis y orientación de las mejores aplicaciones de NCM para reducir impuestos en su negocio.",
+    "TWO-LABEL": "Las mejores solucione",
+    "THREE": "Transparencia en la aplicación de las mejores vías para reducir los costes fiscale.",
+    "THREE-LABEL": "Reducción de costos",
+    "FOUR": "Amplia red de socios que realiza su recolección, despacho y envío de su carga bajo nuestra gestión en todo el mundo.",
+    "FOUR-LABEL": "Amplia red de socios",
+    "FIVE": "Entrega de resultados positivos y aumento de las ganancias reales de su negocio.",
+    "FIVE-LABEL": "Aumento de beneficios",
+    "SIX": "Nos encargamos de toda la burocracia de tus importaciones y exportaciones.",
+    "SIX-LABEL": "Menos burocracia"
   },
 
   "CONTACT": {
