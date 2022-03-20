@@ -72,12 +72,26 @@
       "EMAIL-PLACEHOLDER": "example@w2j.com",
       "MESSAGE-PLACEHOLDER": "Type your message here",
       "SEND-BUTTON": "SEND",
-      "SEND-BUTTON-TOOLTIP": "Send your data and your message"
+      "SEND-BUTTON-TOOLTIP": "Send your data and your message",
+      "MODAL": "Feedback modal of send data is open",
+      "MODAL-TEXT-1": "Data send with success.",
+      "MODAL-TEXT-2": "Soon as possible, we will contact you!",
+      "BTN-CLOSE": "Close modal",
+
+      "FEEDBACK": {
+        "NAME": "Please, type your name",
+        "NAME-LENGTH": "The name must contain at least 8 characters",
+        "PHONE": "Please, first type your international area code, then your phone number",
+        "EMAIL": "Please, type your email",
+        "EMAIL-FORMAT": "Your email must be like this example: example@domain",
+        "MESSAGE-LENGTH": "Your message must contain at least 16 characters",
+        "MESSAGE": "Please, type your message."
+      }
     },
     "FOOTER": {
-      "ADDRESS-1": "Rua Calama, 1460 / Sala E - Olaria",
+      "ADDRESS-1": "Avenue Calama, 1460 / Room E - Olaria",
       "ADDRESS-2": "Porto Velho - RO / 76801-276.",
-      "MESSAGE": "CNPJ 44.514.698/0001-39",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
       "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. Todos os direitos reservados."
     },
     "IMG": {

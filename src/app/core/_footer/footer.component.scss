@@ -1,10 +1,9 @@
-//FOOTER
 .w2j__footer-container {
   bottom: 0;
   height: 104px;
   width: 100vw;
-  background-color: #353535;
-  padding: 0.5rem 4rem;
+  background-color: var(--greyText);
+  padding: 0.5rem 5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,7 +14,7 @@
 
   .w2j__address {
     flex-direction: column;
-    margin: auto;
+    margin: 0px 12% 0 16%;
   }
 
   .w2j__text-address {
@@ -23,7 +22,7 @@
   }
 
   h6 {
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
     font-weight: 400;
     font-size: 11px;

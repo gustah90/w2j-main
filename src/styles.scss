@@ -1,10 +1,12 @@
+@import "variables.scss";
+
 .root {
   width: 100%;
   height: 100vh;
 }
 
 body {
-  background-color: #353535;
+  background-color: var(--backgroundFooter);
   margin: 0!important;
   overflow-x: hidden;
 }
@@ -14,21 +16,9 @@ body {
   cursor: default!important;
 }
 
-input.ng-invalid.ng-touched,
-textarea.ng-invalid.ng-touched,
-select.ng-invalid.ng-touched {
-  background-color: #ffffc9;
-  border-color: #ce1126;
-}
-
-.w2j__is-invalid {
-  background-color: #ffffc9;
-  border-color: #ce1126!important;
-}
-
 .w2j__invalid-feedback {
-  color: #ce1126;
+  color: var(--error);
   line-height: 1rem;
-  padding: 0 24px;
+  padding: 4px 16px 16px;
   margin-top: -16px;
 }

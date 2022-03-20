@@ -44,11 +44,11 @@
     "TWO-LABEL": "Melhores Soluções",
     "THREE": "Transparência na aplicação das melhores fomras de redução de custos tributários.",
     "THREE-LABEL": "Redução de Custos",
-    "FOUR": "Ampla rede de parceria que realiza sua coleta desembaraço e embarque de sua carga sob nossa gerência no mundo inteiro.",
+    "FOUR": "Ampla rede de parceria que realiza sua coleta desembaraço e embarque de sua carga sob nossa gerência.",
     "FOUR-LABEL": "Ampla rede de parceria mundial",
     "FIVE": "Entrega de resultados positivos e aumento nos lucros reais do seu negócio.",
     "FIVE-LABEL": "Aumento de Lucro",
-    "SIX": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "SIX": "Cuidamos de toda burocracia envolvendo suas importações e exportações.",
     "SIX-LABEL": "Cuidamos de toda burocracia envolvendo suas importações e exportações"
   },
 
@@ -79,18 +79,19 @@
       "BTN-CLOSE": "Fechar modal",
 
       "FEEDBACK": {
-        "NAME": "Por favor, informe seu nome completo.",
+        "NAME": "Por favor, informe seu nome.",
         "NAME-LENGTH": "O nome deve conter pelo menos 8 caracteres.",
         "PHONE": "Por favor, informe seu número de DDD e, logo após, seu telefone.",
         "EMAIL": "Por favor, informe seu email.",
-        "MESSAGE": "Sua mensagem deve conter no mínimo 16 caracteres.",
-        "MESSAGE-LENGTH": "Por favor, informe sua mensagem."
+        "EMAIL-FORMAT": "Seu email deve seguir o exemplo: exemplo@dominio",
+        "MESSAGE-LENGTH": "Sua mensagem deve conter no mínimo 16 caracteres.",
+        "MESSAGE": "Por favor, informe sua mensagem."
       }
     },
     "FOOTER": {
-      "ADDRESS-1": "Rua Lourenço Da Silva Cordeiro, 3478 - Centro",
-      "ADDRESS-2": "Rio de Janerio - RJ / 23405-234.",
-      "MESSAGE": "Com as pedras que me jogam construirei meu castelo.",
+      "ADDRESS-1": "Avenida Calama, 1460 - Sala E",
+      "ADDRESS-2": "Olaria / Porto Velho - RO 76801-276",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
       "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. Todos os direitos reservados."
     },
     "IMG": {
