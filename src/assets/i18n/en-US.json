@@ -85,7 +85,8 @@
         "EMAIL": "Please, type your email",
         "EMAIL-FORMAT": "Your email must be like this example: example@domain",
         "MESSAGE-LENGTH": "Your message must contain at least 16 characters",
-        "MESSAGE": "Please, type your message."
+        "MESSAGE": "Please, type your message.",
+        "TOAST-ERROR": "Sua solicitação contém erros. Por favor, revise seus dados e tente novamente."
       }
     },
     "FOOTER": {

@@ -85,7 +85,8 @@
         "EMAIL": "Por favor, informe seu email.",
         "EMAIL-FORMAT": "Seu email deve seguir o exemplo: exemplo@dominio",
         "MESSAGE-LENGTH": "Sua mensagem deve conter no mínimo 16 caracteres.",
-        "MESSAGE": "Por favor, informe sua mensagem."
+        "MESSAGE": "Por favor, informe sua mensagem.",
+        "TOAST-ERROR": "Sua solicitação contém erros. Por favor, revise seus dados e tente novamente."
       }
     },
     "FOOTER": {

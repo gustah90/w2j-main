@@ -16,6 +16,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpLoaderFactory } from '../app/shared/util/http-loader-factory.i18n';
 import { Language } from '../app/shared/domain/enum/language.enum';
 import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { W2jContactComponent } from './core/_contact/w2j-contact.component';
 import { MailService } from './mail.service';
@@ -32,6 +33,7 @@ import { MailService } from './mail.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

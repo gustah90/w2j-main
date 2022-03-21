@@ -6,6 +6,9 @@ import {
   Validators,
   NgForm,
 } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
+import { ToastrService } from 'ngx-toastr';
+import { ModalComponent } from 'src/app/shared/components/modal/modal.component';
 import { MailService } from '../../../app/mail.service';
 
 @Component({
@@ -17,7 +20,12 @@ export class W2jContactComponent implements OnInit {
   FormData!: FormGroup;
   isLoading: boolean = false;
 
-  constructor(private formBuilder: FormBuilder, private mail: MailService) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private mail: MailService,
+    private toastr: ToastrService,
+    private translateService: TranslateService
+  ) {}
 
   ngOnInit(): void {
     this.FormData = this.formBuilder.group({
@@ -42,18 +50,16 @@ export class W2jContactComponent implements OnInit {
   onSubmit(FormData: any) {
     this.isLoading = true;
     this.FormData.reset();
-    console.log(FormData, this.isLoading, 1234567890);
 
-    this.mail.PostMessage(FormData).subscribe(
-      (response) => {
-        //location.href = 'https://formspree.io/f/xknybpyo';
-        console.log({ FormData });
-        console.log(response);
+    this.mail.PostMessage(FormData).subscribe({
+      next: (res) => {
+
       },
-      (error) => {
-        console.warn(error.responseText);
-        console.log({ error });
-      }
-    );
+      error: (err) => {
+        this.toastr.error(
+          this.translateService.instant('CONTACT.FORM.FEEDBACK.TOAST-ERROR')
+        );
+      },
+    });
   }
 }
