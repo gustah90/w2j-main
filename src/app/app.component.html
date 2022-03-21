@@ -1,4 +1,4 @@
-<div class="w2j__header-toggle" [class.opened]="isOpenMenu">
+<div class="w2j__header-toggle" [class.opened]="isOpened">
   <img
     src="../assets/images/w2j__logo.png"
     class="w2j__logo-menu-closed"
@@ -12,11 +12,12 @@
   <button
     type="button"
     class="w2j__btn-to-expand"
-    (click)="openMenu()"
     data-placement="bottom"
     tabindex="0"
+    #toggleButton
   >
     <img
+      #toggleIcon
       src="../assets/icons/default/w2j__burguer-menu-icon.png"
       tabindex="0"
       class="w2j__toggle-menu"
@@ -31,21 +32,20 @@
 
 <div
   class="w2j__header-container"
-  [ngClass]="{ opened: isOpenMenu, closed: !isOpenMenu }"
+  [ngClass]="{ opened: isOpened, closed: !isOpened }"
 >
-<div class="w2j__header-lateral">
-  <section>
-    <img
-      src="../assets/images/w2j__logo.png"
-      tabindex="0"
-      class="w2j__logo m-5"
-      alt="{{ 'HEADER.LOGO-LABEL' | translate }}"
-      data-toggle="tooltip"
-      data-placement="left"
-      title="Logo W2J"
-    />
-  </section>
-
+  <div class="w2j__header-lateral">
+    <section>
+      <img
+        src="../assets/images/w2j__logo.png"
+        tabindex="0"
+        class="w2j__logo m-5"
+        alt="{{ 'HEADER.LOGO-LABEL' | translate }}"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Logo W2J"
+      />
+    </section>
 
     <section class="w2j__header-navigation">
       <a
@@ -135,7 +135,7 @@
     </section>
   </div>
 
-  <section [ngClass]="{ footerAtMenu: isOpenMenu }">
+  <section [ngClass]="{ footerAtMenu: isOpened }">
     <div class="w2j__social-networks">
       <a href="https://www.facebook.com/">
         <button

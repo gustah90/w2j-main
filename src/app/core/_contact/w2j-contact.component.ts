@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, Injector, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
   FormGroup,
   Validators,
-  NgForm,
 } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { ToastrService } from 'ngx-toastr';
-import { ModalComponent } from 'src/app/shared/components/modal/modal.component';
 import { MailService } from '../../../app/mail.service';
 
 @Component({
@@ -21,10 +19,10 @@ export class W2jContactComponent implements OnInit {
   isLoading: boolean = false;
 
   constructor(
+    @Inject(Injector) private readonly injector: Injector,
     private formBuilder: FormBuilder,
     private mail: MailService,
-    private toastr: ToastrService,
-    private translateService: TranslateService
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -47,17 +45,21 @@ export class W2jContactComponent implements OnInit {
     });
   }
 
+  private get translate(): TranslateService {
+    return this.injector.get(TranslateService);
+  }
+
   onSubmit(FormData: any) {
     this.isLoading = true;
     this.FormData.reset();
 
     this.mail.PostMessage(FormData).subscribe({
       next: (res) => {
-
+        //location.href = 'https://www.instagram.com';
       },
       error: (err) => {
         this.toastr.error(
-          this.translateService.instant('CONTACT.FORM.FEEDBACK.TOAST-ERROR')
+          this.translate.instant('CONTACT.FORM.FEEDBACK.TOAST-ERROR')
         );
       },
     });

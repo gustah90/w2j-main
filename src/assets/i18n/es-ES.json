@@ -86,7 +86,7 @@
         "EMAIL-FORMAT": "Su correo electrónico deve estar como lo ejemplo: ejemplo@dominio",
         "MESSAGE-LENGTH": "Su mensaje debe contener al menos 16 caracteres.",
         "MESSAGE": "Por favor ingrese su mensaje.",
-        "TOAST-ERROR": "Sua solicitação contém erros. Por favor, revise seus dados e tente novamente."
+        "TOAST-ERROR": "Su solicitud contiene errores. Por favor revise sus datos y vuelva a intentarlo."
       }
     },
     "FOOTER": {
