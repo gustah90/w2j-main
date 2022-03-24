@@ -1,6 +1,6 @@
 //ARTICLE AREA
 .w2j__contact-session {
-  background-color: #ffffff;
+  background-color: var(--white);
   position: relative;
   z-index: 2;
 
@@ -53,7 +53,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 24vw;
+    margin-top: 12vw;
     justify-content: flex-end;
   }
 
@@ -86,8 +86,8 @@
   }
 
   aside {
-    font-weight: 600;
-    font-size: 1.8vw;
+    font-weight: 400;
+    font-size: 2vw;
     margin-top: 0;
 
     @media (min-width: 1680px) {
@@ -95,7 +95,7 @@
     }
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 770px) and (max-width: 991px) {
     .w2j__top-section {
       display: block !important;
     }
@@ -112,12 +112,6 @@
       padding-right: 320px !important;
     }
   }
-
-  // @media (min-width: 1500px) {
-  //   .w2j__mission {
-  //     top: 420px !important;
-  //   }
-  // }
 
   @media (max-width: 768px) {
     .w2j__top-section {
@@ -175,16 +169,16 @@
   background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 768px) {
   .w2j__img-parallax {
-    min-height: 500px;
+    min-height: 400px;
     //background-attachment: scroll;
   }
 }
 
 //FORM
 .w2j__background-form {
-  background-color: #ffffff;
+  background-color: var(--white);
   background-image: url(../../../assets/images/w2j__world-map-background.png);
   background-attachment: inherit;
   background-position: center;
@@ -218,13 +212,23 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .w2j__header-text {
+      font-size: 32px !important;
+    }
+    label {
+      font-size: 24px !important;
+      line-height: 24px !important;
+    }
+  }
+
   @media (max-width: 500px) {
     .w2j__form-header {
-      padding: 1rem !important;
+      padding: 2rem !important;
     }
 
     .w2j__header-text {
-      font-size: 16px !important;
+      font-size: 20px !important;
       line-height: 24px !important;
     }
     .w2j__header-form-left,
@@ -246,9 +250,9 @@
     .w2j__input-form {
       margin: 1rem;
       padding: 1rem;
-      background-color: #eee;
+      background-color: var(--greyPlaceholder);
       opacity: 0.8;
-      border: 1px solid #284b63;
+      border: 1px solid var(--defaultColor);
       border-radius: 8px;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
@@ -263,11 +267,11 @@
       font-size: 32px;
       line-height: 42px;
       text-align: start;
-      color: #284b63;
+      color: var(--defaultColor);
       margin: 0 16px -8px;
 
       @media (max-width: 425px) {
-        font-size: 24px !important;
+        font-size: 20px !important;
         line-height: 42px !important;
         margin: -16px;
       }
@@ -287,8 +291,8 @@
       border: none;
       border-radius: 8px;
       padding: 1rem 4rem;
-      color: #ffffff;
-      background-color: #284b63;
+      color: var(--white);
+      background-color: var(--defaultColor);
       margin: -16px 0 16px;
       font-family: Raleway;
       font-weight: bold;
@@ -303,8 +307,8 @@
     }
 
     .w2j__btn-send:not([disabled]):hover {
-      background-color: #3c7092;
-      border: 1px solid #000;
+      background-color: var(--lightDefault2);
+      border: 1px solid var(--black);
     }
   }
 }
@@ -321,5 +325,4 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  line-height: 4vw;
 }

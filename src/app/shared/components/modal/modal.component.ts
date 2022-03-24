@@ -13,6 +13,7 @@ export class ModalComponent implements OnInit {
   showModal = false;
 
   toggleModal() {
+    modalRef: this,
     this.showModal = !this.showModal;
     if (!this.showModal) {
       setTimeout(() => {

@@ -1,12 +1,12 @@
 #w2j__services {
-  background-color: #284b63;
+  background-color: var(--defaultColor);
   z-index: 2;
 
   .w2j__block-services {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    padding: 3rem 4rem 5rem;
+    padding: 3rem 3rem 4rem;
     position: relative;
     z-index: 2;
   }
@@ -28,7 +28,7 @@
     font-weight: 400;
     font-family: "Raleway", sans-serif;
     font-size: 2vw;
-    color: white;
+    color: var(--white);
   }
 }
 
@@ -49,5 +49,21 @@
     .w2j__services-text {
       font-size: 2.4vw;
     }
+  }
+}
+
+@media (max-width: 770px) {
+ .top {
+    padding: 0 8vw 2vw 8vw !important;
+  }
+
+  .w2j__block-services {
+    padding: 3rem !important;
+  }
+}
+
+@media (width: 768px) {
+  .top-deal {
+    padding: 0 8vw 2vw 8vw !important;
   }
 }

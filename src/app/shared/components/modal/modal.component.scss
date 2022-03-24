@@ -4,12 +4,12 @@
 }
 
 .w2j__modal {
-  background: #fff;
+  background: var(--white);
   border-radius: 18px;
-  box-shadow: 0 0 8px #fff;
+  box-shadow: 0 0 8px var(--white);
   max-width: 350px;
   position: fixed;
-  padding: 24px;
+  padding: 16px;
   z-index: 11;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@
 }
 
 .w2j__overlay {
-  background: #000;
+  background: var(--black);
   height: 150vh;
   left: 0;
   opacity: 0.6;

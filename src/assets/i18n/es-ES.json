@@ -44,7 +44,7 @@
     "TWO-LABEL": "Las mejores solucione",
     "THREE": "Transparencia en la aplicación de las mejores vías para reducir los costes fiscale.",
     "THREE-LABEL": "Reducción de costos",
-    "FOUR": "Amplia red de socios que realiza su recolección, despacho y envío de su carga bajo nuestra gestión en todo el mundo.",
+    "FOUR": "Amplia red de socios que realiza su recolección, despacho y envío de su carga bajo nuestra gestión.",
     "FOUR-LABEL": "Amplia red de socios",
     "FIVE": "Entrega de resultados positivos y aumento de las ganancias reales de su negocio.",
     "FIVE-LABEL": "Aumento de beneficios",
@@ -79,19 +79,21 @@
       "BTN-CLOSE": "Cerrar modal",
 
       "FEEDBACK": {
-        "NAME": "Por favor ingresa tu nombre completo.",
+        "NAME": "Por favor ingresa tu nombre.",
         "NAME-LENGTH": "El nombre debe contener al menos 8 caracteres.",
         "PHONE": "Ingrese su código de área internacional y después su número de teléfono.",
         "EMAIL": "Por favor, informe a su correo electrónico.",
-        "MESSAGE": "Su mensaje debe contener al menos 16 caracteres.",
-        "MESSAGE-LENGTH": "Por favor ingrese su mensaje."
+        "EMAIL-FORMAT": "Su correo electrónico deve estar como lo ejemplo: ejemplo@dominio",
+        "MESSAGE-LENGTH": "Su mensaje debe contener al menos 16 caracteres.",
+        "MESSAGE": "Por favor ingrese su mensaje.",
+        "TOAST-ERROR": "Su solicitud contiene errores. Por favor revise sus datos y vuelva a intentarlo."
       }
     },
     "FOOTER": {
-      "ADDRESS-1": "Calle Lourenço Da Silva Cordeiro, 3478 - Centro",
-      "ADDRESS-2": "Rio de Janerio - RJ / 23405-234.",
-      "MESSAGE": "Con las piedras que lanzan voy a construir mi castillo.",
-      "ALL-RIGHTS": "W2J COMERCIO INTERNACIONAL 2021 ®. Todo los derechos reservados."
+      "ADDRESS-1": "Avenida Calama, 1460 - Sala E",
+      "ADDRESS-2": "Olaria / Porto Velho - RO 76801-276",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
+      "ALL-RIGHTS": "Todo los derechos reservados."
     },
     "IMG": {
       "ARROW-RIGHT": "Flecha a la derecha",

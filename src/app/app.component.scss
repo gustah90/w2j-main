@@ -1,15 +1,18 @@
 .w2j__header-container.opened {
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 24vw;
-    right: 0;
-    border-left: 1px solid #284b63;
     border-bottom: unset;
     max-height: unset;
     position: fixed;
-    transition: width ease-in-out 0.2s;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
+    right: -24.1vw;
+    transition: all 0.4s;
+    transform: translate3d(-24vw, 0, 0);
+    animation: 2s ease-in;
+    z-index: 3;
 
     .w2j__header-lateral {
       display: flex;
@@ -35,35 +38,60 @@
   }
 }
 
-@media (max-width: 768px) {
+.w2j__header-container.closed {
+  @media (max-width: 770px) {
+    display: flex;
+    width: 24vw;
+    flex-direction: column;
+    bottom: 0;
+    max-height: unset;
+    position: fixed;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
+    right: -24vw;
+    transform: translate3d(24vw, 0, 1);
+    transition: all 0.4s;
+    animation: 2s ease-in;
+    filter: opacity(0.4);
+
+    .w2j__languages,
+    .w2j__logo,
+    .w2j__header-navigation,
+    .w2j__social-networks,
+    .w2j__address {
+      filter: opacity(0);
+    }
+  }
+}
+
+@media (max-width: 770px) {
   .w2j__header-toggle.opened {
     transition: height 1s;
-    z-index: 4;
-    border-bottom: 1px solid #284b63;
+    z-index: 10;
+    border-bottom: 1px solid var(--defaultColor);
   }
 
   .w2j__header-toggle.closed {
     height: 50px;
-    border-bottom: 1px solid #284b63;
+    border-bottom: 1px solid var(--defaultColor);
   }
 }
 
 .w2j__header-toggle {
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     width: 100vw;
     height: 50px;
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     padding: 32px 16px;
     align-items: center;
-    border-bottom: 1px solid #284b63;
+    border-bottom: 1px solid var(--defaultColor);
 
     .w2j__logo-menu-closed {
       width: 2vw;
@@ -72,7 +100,7 @@
   }
 
   .w2j__btn-to-expand {
-    border: 2px solid #386786;
+    border: 2px solid var(--lightDefault);
     border-radius: 8px;
     padding: 4px;
     background: none;
@@ -96,15 +124,15 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: #ffffff;
-  max-height: 116px;
+  background-color: var(--white);
+  max-height: 100px;
   width: 100vw;
-  z-index: 3;
-  padding: 2rem;
-  border-bottom: 1px solid #284b63;
+  z-index: 4;
+  padding: 1rem;
+  border-bottom: 1px solid var(--defaultColor);
   top: 0px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     justify-content: space-around;
   }
 
@@ -120,7 +148,7 @@
       margin: 1vw;
       cursor: pointer;
       text-decoration: none;
-      color: #353535;
+      color: var(--greyText);
       font-family: "Raleway", sans-serif;
       font-size: 2vw;
       font-weight: 400;
@@ -135,7 +163,7 @@
     }
 
     .w2j__contact {
-      border: 1px solid #353535;
+      border: 1px solid var(--greyText);
       padding: 8px;
     }
   }
@@ -149,7 +177,7 @@
     display: flex;
 
     .w2j__language-icon {
-      background-color: #284b63;
+      background-color: var(--defaultColor);
       border-radius: 100%;
       z-index: 4;
       height: 3.5vw;
@@ -181,7 +209,7 @@
     border: none;
     background: none;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.2rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
   }
@@ -190,7 +218,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .w2j__header-toggle {
     justify-content: flex-end;
   }
@@ -221,7 +249,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .w2j__address {
     display: none;
   }
@@ -255,5 +283,33 @@
 
   .w2j__header-path {
     font-size: 3.5vw !important;
+  }
+
+  .w2j__btn-to-expand {
+    padding: 2px !important;
+    margin-right: unset !important;
+
+    .w2j__toggle-menu {
+      width: 1.2rem !important;
+      margin-top: -3px !important;
+    }
+  }
+}
+
+@media (width: 375px) {
+  .m-5 {
+    margin: 1.2rem 3rem !important;
+  }
+
+  .w2j__header-navigation {
+    margin-top: -12px;
+  }
+
+  .w2j__contact {
+    padding: 2px !important;
+  }
+
+  .w2j__address {
+    margin-top: 0px;
   }
 }

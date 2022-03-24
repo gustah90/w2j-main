@@ -1,5 +1,5 @@
 #w2j__know-us {
-  background: #ffffff;
+  background: var(--white);
 }
 
 .w2j__know-us-container {
@@ -16,7 +16,7 @@
     font-family: "Raleway", sans-serif;
     font-size: 2vw;
     font-weight: 400;
-    color: #000000;
+    color: var(--black);
     opacity: 1;
     z-index: 2;
   }
@@ -56,6 +56,7 @@
   }
 
   .w2j__img-connections {
+    top: 16px;
     margin-top: 1rem;
     margin: auto;
     width: 40vw;
@@ -74,7 +75,7 @@
   .w2j__know-us-text {
     text-align: center !important;
     font-size: 3vw !important;
-    padding: 1rem 2rem 2.8rem !important;
+    padding: 1rem 2rem 2.5rem !important;
     margin-top: 0 !important;
   }
 }

@@ -1,4 +1,4 @@
-<div class="w2j__header-toggle" [class.opened]="isOpenMenu">
+<div class="w2j__header-toggle" [class.opened]="isOpened">
   <img
     src="../assets/images/w2j__logo.png"
     class="w2j__logo-menu-closed"
@@ -12,11 +12,12 @@
   <button
     type="button"
     class="w2j__btn-to-expand"
-    (click)="openMenu()"
     data-placement="bottom"
     tabindex="0"
+    #toggleButton
   >
     <img
+      #toggleIcon
       src="../assets/icons/default/w2j__burguer-menu-icon.png"
       tabindex="0"
       class="w2j__toggle-menu"
@@ -31,21 +32,20 @@
 
 <div
   class="w2j__header-container"
-  [ngClass]="{ opened: isOpenMenu, closed: !isOpenMenu }"
+  [ngClass]="{ opened: isOpened, closed: !isOpened }"
 >
-<div class="w2j__header-lateral">
-  <section style="margin: auto;">
-    <img
-      src="../assets/images/w2j__logo.png"
-      tabindex="0"
-      class="w2j__logo"
-      alt="{{ 'HEADER.LOGO-LABEL' | translate }}"
-      data-toggle="tooltip"
-      data-placement="left"
-      title="Logo W2J"
-    />
-  </section>
-
+  <div class="w2j__header-lateral">
+    <section>
+      <img
+        src="../assets/images/w2j__logo.png"
+        tabindex="0"
+        class="w2j__logo m-5"
+        alt="{{ 'HEADER.LOGO-LABEL' | translate }}"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Logo W2J"
+      />
+    </section>
 
     <section class="w2j__header-navigation">
       <a
@@ -89,7 +89,7 @@
         >{{ "HEADER.CONTACT" | translate }}</a
       >
     </section>
-    <section class="w2j__languages">
+    <section class="w2j__languages m-5">
       <button
         class="w2j__btn-languages"
         tabindex="0"
@@ -135,7 +135,7 @@
     </section>
   </div>
 
-  <section [ngClass]="{ footerAtMenu: isOpenMenu }">
+  <section [ngClass]="{ footerAtMenu: isOpened }">
     <div class="w2j__social-networks">
       <a href="https://www.facebook.com/">
         <button
@@ -195,8 +195,14 @@
           {{ "CONTACT.FOOTER.ADDRESS-2" | translate }}</b
         >
       </h6>
-      <h6 class="mt-3">
-        {{ "CONTACT.FOOTER.ALL-RIGHTS" | translate }}
+      <h6 class="mt-1">
+        Designed by
+        <a href="https://www.linkedin.com/in/alessandro-gois/"
+          >Alessandro Góis</a
+        >. Developed by
+        <a href="https://www.linkedin.com/in/ggustavo-henrique/"
+          >Gustavo Henrique</a
+        >.<br />{{ "CONTACT.FOOTER.ALL-RIGHTS" | translate }}
       </h6>
     </div>
   </section>

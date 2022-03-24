@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, Injector, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
   FormGroup,
   Validators,
-  NgForm,
 } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
+import { ToastrService } from 'ngx-toastr';
 import { MailService } from '../../../app/mail.service';
 
 @Component({
@@ -17,7 +18,12 @@ export class W2jContactComponent implements OnInit {
   FormData!: FormGroup;
   isLoading: boolean = false;
 
-  constructor(private formBuilder: FormBuilder, private mail: MailService) {}
+  constructor(
+    @Inject(Injector) private readonly injector: Injector,
+    private formBuilder: FormBuilder,
+    private mail: MailService,
+    private toastr: ToastrService
+  ) {}
 
   ngOnInit(): void {
     this.FormData = this.formBuilder.group({
@@ -39,21 +45,23 @@ export class W2jContactComponent implements OnInit {
     });
   }
 
+  private get translate(): TranslateService {
+    return this.injector.get(TranslateService);
+  }
+
   onSubmit(FormData: any) {
     this.isLoading = true;
     this.FormData.reset();
-    console.log(FormData, this.isLoading, 1234567890);
 
-    this.mail.PostMessage(FormData).subscribe(
-      (response) => {
-        //location.href = 'https://formspree.io/f/xknybpyo';
-        console.log({ FormData });
-        console.log(response);
+    this.mail.PostMessage(FormData).subscribe({
+      next: (res) => {
+        //location.href = 'https://www.instagram.com';
       },
-      (error) => {
-        console.warn(error.responseText);
-        console.log({ error });
-      }
-    );
+      error: (err) => {
+        this.toastr.error(
+          this.translate.instant('CONTACT.FORM.FEEDBACK.TOAST-ERROR')
+        );
+      },
+    });
   }
 }

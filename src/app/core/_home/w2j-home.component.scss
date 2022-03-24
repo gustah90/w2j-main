@@ -23,7 +23,7 @@
 
     .w2j__home-title {
       display: flex;
-      color: #ffffff;
+      color: var(--white);
       opacity: 1;
       font-size: 3vw;
       margin-bottom: 8px;
@@ -36,7 +36,7 @@
       text-align: left;
       font-size: 1.7vw;
       font-weight: 400;
-      color: #ffffff;
+      color: var(--white);
       opacity: 1;
       margin-bottom: 24px;
     }
@@ -46,9 +46,9 @@
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       font-size: 2vw;
-      color: #ffffff;
-      background-color: #284b63;
-      border: 1px solid #ffffff;
+      color: var(--white);
+      background-color: var(--defaultColor);
+      border: 1px solid var(--white);
       opacity: 1;
       text-decoration: none;
     }
@@ -71,7 +71,7 @@
     padding: 0 !important;
   }
   .w2j__home-box {
-    top: 112px !important;
+    top: 100px !important;
     margin: unset !important;
     margin-left: 4vw !important;
     box-sizing: unset !important;
