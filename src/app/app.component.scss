@@ -8,7 +8,7 @@
     max-height: unset;
     position: fixed;
     box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
-    right: -24vw;
+    right: -24.1vw;
     transition: all 0.4s;
     transform: translate3d(-24vw, 0, 0);
     animation: 2s ease-in;
@@ -49,7 +49,7 @@
     box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
     right: -24vw;
     transform: translate3d(24vw, 0, 1);
-    transition: all .4s;
+    transition: all 0.4s;
     animation: 2s ease-in;
     filter: opacity(0.4);
 
@@ -303,5 +303,13 @@
 
   .w2j__header-navigation {
     margin-top: -12px;
+  }
+
+  .w2j__contact {
+    padding: 2px !important;
+  }
+
+  .w2j__address {
+    margin-top: 0px;
   }
 }
