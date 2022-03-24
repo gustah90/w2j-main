@@ -1,0 +1,65 @@
+.w2j__footer-container {
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: var(--greyText);
+  padding: 0.5rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .w2j__pb-logo {
+    max-height: 4.2vw;
+    padding: 0 1.5vw;
+  }
+
+  .w2j__address {
+    flex-direction: column;
+    margin: 0px 12% 0 16%;
+  }
+
+  .w2j__text-address,
+  .w2j__text-authors {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h6 {
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .w2j__social-networks {
+    display: flex;
+    align-items: center;
+  }
+
+  .w2j__btn-networks {
+    border: none;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .w2j__network-icon {
+    width: 4vw;
+  }
+
+  .w2j__profile:hover {
+    color: var(--greyPlaceholder);
+  }
+
+  @media (width: 820px) {
+    .w2j__pb-logo {
+      height: 34px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

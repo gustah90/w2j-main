@@ -1,0 +1,108 @@
+#w2j__home {
+  display: flex;
+  align-items: center;
+
+  .w2j__home-background {
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    min-height: 860px;
+    padding: calc(0rem + 23px) 0 0;
+  }
+
+  .w2j__home-box {
+    background-color: rgba(53, 53, 53, 0.7);
+    z-index: 2;
+    box-sizing: content-box;
+    padding: 32px 40px 40px 16px;
+    margin: 0 0 0 10vh;
+    position: absolute;
+    top: 280px;
+    right: 0;
+    left: 0;
+
+    .w2j__home-title {
+      display: flex;
+      color: var(--white);
+      opacity: 1;
+      font-size: 3vw;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      text-align: left;
+    }
+    .w2j__home-content {
+      font-family: "Raleway", sans-serif;
+      text-align: left;
+      font-size: 1.7vw;
+      font-weight: 400;
+      color: var(--white);
+      opacity: 1;
+      margin-bottom: 24px;
+    }
+    .w2j__btn-know-more {
+      padding: 12px 16px;
+      margin: 24px 0 0 24px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 2vw;
+      color: var(--white);
+      background-color: var(--defaultColor);
+      border: 1px solid var(--white);
+      opacity: 1;
+      text-decoration: none;
+    }
+    .w2j__btn-know-more:hover {
+      background-color: #3c7092;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #w2j__home {
+    margin-bottom: 64px;
+  }
+  .w2j__home-background {
+    min-width: unset !important;
+    min-height: unset !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 64px !important;
+    padding: 0 !important;
+  }
+  .w2j__home-box {
+    top: 100px !important;
+    margin: unset !important;
+    margin-left: 4vw !important;
+    box-sizing: unset !important;
+    padding: 16px !important;
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .w2j__home-title {
+    font-size: 3vw !important;
+    padding: 8px !important;
+    margin-bottom: unset !important;
+  }
+  .w2j__home-content {
+    font-size: 2vw !important;
+    padding: 8px !important;
+    margin-bottom: unset !important;
+    margin-top: -8px !important;
+  }
+  .w2j__btn-know-more {
+    font-size: 2vw !important;
+    margin-top: -12px !important;
+    margin-left: 112px !important;
+    position: absolute !important;
+    padding: 4px 8px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .w2j__home-box {
+    top: 80px !important;
+  }
+}

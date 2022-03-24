@@ -1,0 +1,110 @@
+{
+  "HEADER": {
+    "KNOW-US": "QUEM SOMOS",
+    "SERVICES": "SERVIÇOS",
+    "CONTACT": "CONTATO",
+    "BURGUER-MENU": "Abrir Menu Lateral",
+    "LOGO-LABEL": "Logotipo, representação de um globo terrestre dentro dos caracteres W2J com uma seta sobre a letra W apontando para a direita, outra seta abaixo da letra J apontando para esquerda e o termo comércio internacional abaixo da letra W",
+    "ANCHOR": {
+      "HOME": "Subir ao topo",
+      "KNOW-US": "Ir à seção Quem Somos",
+      "SERVICES": "Ir à seção sobre nossos Serviços",
+      "CONTACT": "Ir à seção de Contato"
+    },
+    "LANGUAGES": {
+      "PORTUGUESE": "Mudar idioma para Português",
+      "SPANISH": "Mudar idioma para Espanhol",
+      "ENGLISH": "Mudar idioma para Inglês"
+    }
+  },
+
+  "HOME": {
+    "BACKGROUND": "Imagem de fundo contendo embarcações enfileiradas num cais",
+    "TITLE": "NÓS SOMOS A W2J COMÉRCIO INTERNACIONAL",
+    "CONTENT": "Uma empresa criada para prestar assessoria em comércio internacional. Aqui nós apresentamos as melhores soluções em redução de custos para suas importações, tanto na parte logística quanto na tributária, tudo de forma legal e transparente. Somos uma equipe altamente qualificada e comprometida em tornar viável e próspero seu negócio.",
+    "BUTTON": "SAIBA MAIS",
+    "TOOLTIP": "Saiba mais"
+  },
+
+  "KNOW": {
+    "TEXT": {
+      "WORLD": "A W2J Comércio Internacional nasceu com objetivo de reduzir custos de suas importações, estudando o assunto descobriu uma forma ética, segura e eficiente de realizar operações de importação. E porque não estender tais conhecimento ao mercado Nacional, proporcionando benefícios de redução de custos e ampliando a fatia no mercado. Resolveu então oferecer e compartilhar com o comércio internacional.",
+      "LOGISTIC": "Na importação, os custos de impostos, taxas e despesas aduaneiras são muito altos, principalmente o ICMS que é o maior custo da cadeia. O que podemos e faremos é reduzir este e os demais custos. Quer saber como? Entre em contato conosco e você vai se surpreender quando receber a planilha comparativa com sua última importação."
+    },
+    "IMG": {
+      "WORLD": "Imagem do globo terrestre",
+      "LOGISTIC": "Imagem representando a logística"
+    }
+  },
+
+  "SERVICES": {
+    "ONE": "Equipe de profissionais experientes no seguimento de proposta de importação por encomenda.",
+    "ONE-LABEL": "Entrega Pontual",
+    "TWO": "Análise e orientação das melhores aplicações do NCM para reduzir os impostos no seu negócio.",
+    "TWO-LABEL": "Melhores Soluções",
+    "THREE": "Transparência na aplicação das melhores fomras de redução de custos tributários.",
+    "THREE-LABEL": "Redução de Custos",
+    "FOUR": "Ampla rede de parceria que realiza sua coleta desembaraço e embarque de sua carga sob nossa gerência.",
+    "FOUR-LABEL": "Ampla rede de parceria mundial",
+    "FIVE": "Entrega de resultados positivos e aumento nos lucros reais do seu negócio.",
+    "FIVE-LABEL": "Aumento de Lucro",
+    "SIX": "Cuidamos de toda burocracia envolvendo suas importações e exportações.",
+    "SIX-LABEL": "Cuidamos de toda burocracia envolvendo suas importações e exportações"
+  },
+
+  "CONTACT": {
+    "ARTICLE": {
+      "VISION-TITLE": "Visão",
+      "VISION-CONTENT": "Obter a confiança e credibilidade de nossos clientes, investidores e parceiros como a melhor opção de operações de importação e exportação no Brasil. Em dois anos teremos nossa primeira filial no exterior. Proporcionar o crescimento ético, profissional, intelectual e financeiro aos nossos colaboradores e parceiros.",
+      "MISSION-TITLE": "Missão",
+      "MISSION-CONTENT": "Ser parte integrante do cliente importador ou exportador, assessorando, gerenciando suas operações e viabilizando seus negócios para que sejam prósperos.",
+      "VALUE-TITLE": "Valores",
+      "VALUE-CONTENT": "Temos comprometimento com a transparência, qualidade na tomada de decisão objetivando sempre o melhor resultados para os nossos clientes. Acreditamos que transparência, simplicidade e bom senso direcionam melhor que sofisticação e complexidade. Trabalhamos sempre para garantir a melhor solução operacional para os nossos clientes."
+    },
+    "FORM": {
+      "HEADER-LEFT": "O que determina o preço é a consulta!",
+      "HEADER-RIGHT": "Então, venha fazer uma consulta conosco!",
+      "NAME": "Nome",
+      "PHONE": "Telefone",
+      "MESSAGE": "Mensagem",
+      "NAME-PLACEHOLDER": "Digite seu nome aqui",
+      "PHONE-PLACEHOLDER": "Digite seu telefone aqui",
+      "EMAIL-PLACEHOLDER": "exemplo@w2j.com",
+      "MESSAGE-PLACEHOLDER": "Digite sua mensagem aqui",
+      "SEND-BUTTON": "ENVIAR",
+      "SEND-BUTTON-TOOLTIP": "Enviar seus dados e a mensagem",
+      "MODAL": "Modal de feedback dos dados enviados está aberto",
+      "MODAL-TEXT-1": "Informações enviadas com sucesso.",
+      "MODAL-TEXT-2": "Em breve entraremos em contato!",
+      "BTN-CLOSE": "Fechar modal",
+
+      "FEEDBACK": {
+        "NAME": "Por favor, informe seu nome.",
+        "NAME-LENGTH": "O nome deve conter pelo menos 8 caracteres.",
+        "PHONE": "Por favor, informe seu número de DDD e, logo após, seu telefone.",
+        "EMAIL": "Por favor, informe seu email.",
+        "EMAIL-FORMAT": "Seu email deve seguir o exemplo: exemplo@dominio",
+        "MESSAGE-LENGTH": "Sua mensagem deve conter no mínimo 16 caracteres.",
+        "MESSAGE": "Por favor, informe sua mensagem.",
+        "TOAST-ERROR": "Sua solicitação contém erros. Por favor, revise seus dados e tente novamente."
+      }
+    },
+    "FOOTER": {
+      "ADDRESS-1": "Avenida Calama, 1460 - Sala E",
+      "ADDRESS-2": "Olaria / Porto Velho - RO 76801-276",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
+      "ALL-RIGHTS": "Todos os direitos reservados."
+    },
+    "IMG": {
+      "ARROW-RIGHT": "Seta para a direita",
+      "ARROW-LEFT": "Seta para a esquerda",
+      "ARROW-BACKGROUND": "Uma seta sobre a outra no background",
+      "PARALLAX": "Imagem de efeito parallax contendo um avião, um navio, containers e um caminhão",
+      "WORLD-MAP": "Mapa do mundo em cor cinza",
+      "WHITE-LOGO": "Logomarca W2J em branco",
+      "NET-FB": "Ir à página do Facebbok da W2J",
+      "NET-IN": "Ir à página do Instagram da W2J",
+      "NET-TW": "Ir à página do Twitter da W2J"
+    }
+  }
+}

@@ -1,0 +1,328 @@
+//ARTICLE AREA
+.w2j__contact-session {
+  background-color: var(--white);
+  position: relative;
+  z-index: 2;
+
+  .w2j__arrow-background {
+    background-image: url(../../../assets/icons/light-grey/w2j__round-arrows.png);
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .w2j__top-section {
+    display: flex;
+    justify-content: flex-start;
+
+    .w2j__contact-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .w2j__mission {
+      justify-content: flex-start;
+      top: 16vw;
+      padding: 0 1rem 2vw 4vw;
+
+      .w2j__mission-section,
+      .w2j__mission-text {
+        text-align: left;
+      }
+    }
+
+    .w2j__vision {
+      justify-content: flex-end;
+      padding: 1vw 4vw 2vw 0;
+
+      .w2j__vision-section,
+      .w2j__vision-text {
+        text-align: right;
+      }
+    }
+  }
+
+  .w2j__value-section {
+    text-align: center;
+    padding: 0 24vw 8vw 8vw;
+  }
+
+  .w2j__value {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12vw;
+    justify-content: flex-end;
+  }
+
+  .w2j__arrow-side {
+    position: absolute;
+    margin-top: 0;
+    width: 32vw;
+    object-fit: cover;
+  }
+
+  .w2j__img-mission {
+    left: -2%;
+    object-position: 0px -80px;
+  }
+
+  .w2j__img-value {
+    right: 0%;
+    object-position: -120px -16px;
+    transform: rotate(180deg);
+
+    @media (min-width: 1680px) {
+      object-position: -190px -16px;
+    }
+  }
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+  }
+
+  aside {
+    font-weight: 400;
+    font-size: 2vw;
+    margin-top: 0;
+
+    @media (min-width: 1680px) {
+      margin-top: 50px !important;
+    }
+  }
+
+  @media (min-width: 770px) and (max-width: 991px) {
+    .w2j__top-section {
+      display: block !important;
+    }
+
+    .w2j__vision  {
+      margin-top: -120px !important;
+    }
+
+    .w2j__vision-section {
+      padding-left: 240px !important;
+    }
+
+    .w2j__mission-section {
+      padding-right: 320px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .w2j__top-section {
+      display: block !important;
+      justify-content: center !important;
+
+      .w2j__mission {
+        justify-content: center !important;
+        top: 0 !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__mission-section,
+        .w2j__mission-text {
+          text-align: center !important;
+        }
+      }
+
+      .w2j__vision {
+        justify-content: center !important;
+        padding: 4vw 16vw !important;
+
+        .w2j__vision-section,
+        .w2j__vision-text {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .w2j__value-section {
+      padding: 4vw 16vw 8vw !important;
+    }
+
+    .w2j__value {
+      margin-top: 0 !important;
+      justify-content: center !important;
+    }
+
+    .w2j__arrow-side {
+      display: none;
+    }
+
+    aside {
+      font-size: 2.4vw;
+    }
+  }
+}
+
+//PARALLAX
+.w2j__img-parallax {
+  background-image: url(../../../assets/images/w2j__parallax-background.png);
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .w2j__img-parallax {
+    min-height: 400px;
+    //background-attachment: scroll;
+  }
+}
+
+//FORM
+.w2j__background-form {
+  background-color: var(--white);
+  background-image: url(../../../assets/images/w2j__world-map-background.png);
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .w2j__form-header {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 1rem;
+
+    .w2j__header-text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 56px;
+
+      @media (min-width: 1800px) {
+        font-size: 100px !important;
+        line-height: 100px !important;
+      }
+    }
+
+    .w2j__header-form-left {
+      text-align: start;
+    }
+
+    .w2j__header-form-right {
+      text-align: end;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .w2j__header-text {
+      font-size: 32px !important;
+    }
+    label {
+      font-size: 24px !important;
+      line-height: 24px !important;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .w2j__form-header {
+      padding: 2rem !important;
+    }
+
+    .w2j__header-text {
+      font-size: 20px !important;
+      line-height: 24px !important;
+    }
+    .w2j__header-form-left,
+    .w2j__header-form-right {
+      text-align: center !important;
+    }
+
+    .w2j__input-message {
+      height: 32vw !important;
+    }
+  }
+
+  .w2j__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+
+    .w2j__input-form {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: var(--greyPlaceholder);
+      opacity: 0.8;
+      border: 1px solid var(--defaultColor);
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+      @media (max-width: 425px) {
+        margin: 1rem -16px !important;
+      }
+    }
+
+    label {
+      font-family: Raleway;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 42px;
+      text-align: start;
+      color: var(--defaultColor);
+      margin: 0 16px -8px;
+
+      @media (max-width: 425px) {
+        font-size: 20px !important;
+        line-height: 42px !important;
+        margin: -16px;
+      }
+    }
+    .w2j__input-message {
+      height: 16vw;
+      resize: none;
+    }
+  }
+
+  .w2j__send-form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    .w2j__btn-send {
+      border: none;
+      border-radius: 8px;
+      padding: 1rem 4rem;
+      color: var(--white);
+      background-color: var(--defaultColor);
+      margin: -16px 0 16px;
+      font-family: Raleway;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 42px;
+      height: 72px;
+      cursor: pointer;
+
+      @media (max-width: 425px) {
+        padding: 0.5rem 2rem !important;
+      }
+    }
+
+    .w2j__btn-send:not([disabled]):hover {
+      background-color: var(--lightDefault2);
+      border: 1px solid var(--black);
+    }
+  }
+}
+
+//MODAL
+
+.w2j__ok {
+  width: 150px;
+  margin: auto;
+}
+
+.w2j__text-modal {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+}

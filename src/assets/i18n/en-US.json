@@ -1,0 +1,110 @@
+{
+  "HEADER": {
+    "KNOW-US": "WHO WE ARE",
+    "SERVICES": "SERVICES",
+    "CONTACT": "CONTACT US",
+    "BURGUER-MENU": "Open Lateral Menu",
+    "LOGO-LABEL": "Logo presenting a globe within the characters W2J with an arrow above the letter W pointing to the right, another arrow below the letter J pointing to the left and the term international trade below the letter W",
+    "ANCHOR": {
+      "HOME": "Climb to the top",
+      "KNOW-US": "Go to the Who We Are section",
+      "SERVICES": "Go to the Services section",
+      "CONTACT": "Go to the Contact Us section"
+    },
+    "LANGUAGES": {
+      "PORTUGUESE": "Change language to Portuguese",
+      "SPANISH": "Change language to Spanish",
+      "ENGLISH": "Change language to English"
+    }
+  },
+
+  "HOME": {
+    "BACKGROUND": "Background image containing ships lined up on a pier",
+    "TITLE": "WE ARE THE W2J INTERNATIONAL COMMERCE",
+    "CONTENT": "A company created to provide and help you on your international trades. Here we will present you to the best solutions with regard to reducing tax costs for imports, both in terms of logistics and taxation in a legal and transparent manner. We have a highly qualified team committed to making your business viable and prosperous.",
+    "BUTTON": "KNOW MORE",
+    "TOOLTIP": "Know more"
+  },
+
+  "KNOW": {
+    "TEXT": {
+      "WORLD": "W2J Comércio Internacional, born with the purpose of reducing the costs of your importsand, studying the subject, discovered a way an ethical and safe way to carry out import and export operations. And what better way than to extend this knowledge to the national market, providing cost reduction benefits and increasing market share. So we decided to share to offer and share with international trade.",
+      "LOGISTIC": "in the import market, the costs of taxes, fees and customs expenses are very high, mainly ICMS, which is the biggest cost in the chain. What we can and will do is reduce this and other costs. Want to know how? Contact us and you will be surprised when you receive the comparative spreadsheet between your current and your last import."
+    },
+    "IMG": {
+      "WORLD": "Earth globe image",
+      "LOGISTIC": "Image representing logistics"
+    }
+  },
+
+  "SERVICES": {
+    "ONE": "Team of experienced professionals in the follow-up of import proposal by order",
+    "ONE-LABEL": "On time delivery",
+    "TWO": "Analysis and guidance of the best NCM applications to reduce taxes in your business",
+    "TWO-LABEL": "Best Solutions",
+    "THREE": "Transparency in the application of the best forms of tax cost reduction",
+    "THREE-LABEL": "Cost Reduction",
+    "FOUR": "Extensive partnership network that carries out your collection, clearance and shipment of your cargo.",
+    "FOUR-LABEL": "Extensive partner network",
+    "FIVE": "Delivery of positive results and increase in the real profits of your business",
+    "FIVE-LABEL": "Increase in Profit",
+    "SIX": "We take care of all the bureaucracy involving your imports and exports",
+    "SIX-LABEL": "Less Bureaucracy"
+  },
+
+  "CONTACT": {
+    "ARTICLE": {
+      "VISION-TITLE": "Vision",
+      "VISION-CONTENT": "Obtain the trust and credibility of our customers, investors and partners showing the best options for your imports and exports operations in Brazil. In two years we will have our first branch abroad. We will provide ethical, professional, intellectual and financial growth to our employees and partners.",
+      "MISSION-TITLE": "Mission",
+      "MISSION-CONTENT": "To be an integral part of the customer with regard to import and export, advising and managing their operations also enabling their business to be prosperous.",
+      "VALUE-TITLE": "Values",
+      "VALUE-CONTENT": "We are committed to transparency, quality in decision making, always aiming at the best results for our customers. We believe that transparency, simplicity and common sense guide better than sophistication and complexity. We always work to ensure the best operational solution for our customers."
+    },
+    "FORM": {
+      "HEADER-LEFT": "It is the query that determines the value!",
+      "HEADER-RIGHT": "So come make an appointment with us!",
+      "NAME": "Name",
+      "PHONE": "Phone",
+      "MESSAGE": "Message",
+      "NAME-PLACEHOLDER": "Type your name here",
+      "PHONE-PLACEHOLDER": "Type your phone here",
+      "EMAIL-PLACEHOLDER": "example@w2j.com",
+      "MESSAGE-PLACEHOLDER": "Type your message here",
+      "SEND-BUTTON": "SEND",
+      "SEND-BUTTON-TOOLTIP": "Send your data and your message",
+      "MODAL": "Feedback modal of send data is open",
+      "MODAL-TEXT-1": "Data send with success.",
+      "MODAL-TEXT-2": "Soon as possible, we will contact you!",
+      "BTN-CLOSE": "Close modal",
+
+      "FEEDBACK": {
+        "NAME": "Please, type your name",
+        "NAME-LENGTH": "The name must contain at least 8 characters",
+        "PHONE": "Please, first type your international area code, then your phone number",
+        "EMAIL": "Please, type your email",
+        "EMAIL-FORMAT": "Your email must be like this example: example@domain",
+        "MESSAGE-LENGTH": "Your message must contain at least 16 characters",
+        "MESSAGE": "Please, type your message.",
+        "TOAST-ERROR": "Your request contains errors. Please review your personal data and try again."
+      }
+    },
+    "FOOTER": {
+      "ADDRESS-1": "Avenue Calama, 1460 / Room E - Olaria",
+      "ADDRESS-2": "Porto Velho - RO / 76801-276.",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
+      "ALL-RIGHTS": "Todos os direitos reservados."
+    },
+    "IMG": {
+      "ARROW-RIGHT": "Right arrow",
+      "ARROW-LEFT": "Left arrow",
+      "ARROW-BACKGROUND": "One arrow over the other in the background",
+      "PARALLAX": "Parallax image containing an airplane, a ship, containers and a truck",
+      "WORLD-MAP": "World map in gray color",
+      "WHITE-LOGO": "White Logo of W2J",
+      "NET-FB": "Go to Facebook page of W2J",
+      "NET-IN": "Go to Instagram page of W2J",
+      "NET-TW": "Go to Twitter page of W2J"
+    }
+  }
+}

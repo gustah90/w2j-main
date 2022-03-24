@@ -1,0 +1,40 @@
+.w2j__modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.w2j__modal {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 0 8px var(--white);
+  max-width: 350px;
+  position: fixed;
+  padding: 16px;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.w2j__close-icon {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 12;
+}
+
+.w2j__overlay {
+  background: var(--black);
+  height: 150vh;
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  width: 150vw;
+  z-index: 10;
+}

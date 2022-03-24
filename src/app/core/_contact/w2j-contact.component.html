@@ -1,0 +1,249 @@
+<!-- ARTICLE AREA -->
+<section class="w2j__contact-session">
+  <div class="w2j__arrow-background">
+    <div class="w2j__top-section">
+      <img
+        class="w2j__arrow-side w2j__img-mission"
+        src="../../../assets/icons/dark-grey/w2j__arrow.png"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        alt="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+        title="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+      />
+      <div class="w2j__contact-container w2j__mission col-lg-5 col-md-12 pr-0">
+        <aside tabindex="0" class="w2j__mission-section">
+          <span class="w2j__mission-text">{{
+            "CONTACT.ARTICLE.MISSION-TITLE" | translate
+          }}</span
+          ><br />
+          {{ "CONTACT.ARTICLE.MISSION-CONTENT" | translate }}
+        </aside>
+      </div>
+
+      <div class="w2j__vision col-lg-7 col-md-12 pl-0">
+        <aside tabindex="0" class="w2j__vision-section">
+          <span class="w2j__vision-text">{{
+            "CONTACT.ARTICLE.VISION-TITLE" | translate
+          }}</span
+          ><br />
+          {{ "CONTACT.ARTICLE.VISION-CONTENT" | translate }}
+        </aside>
+      </div>
+    </div>
+
+    <div class="w2j__contact-container w2j__value">
+      <aside tabindex="0" class="w2j__value-section">
+        <span class="w2j__value-text">{{
+          "CONTACT.ARTICLE.VALUE-TITLE" | translate
+        }}</span>
+        <br />
+        {{ "CONTACT.ARTICLE.VALUE-CONTENT" | translate }}
+      </aside>
+      <img
+        class="w2j__arrow-side w2j__img-value"
+        src="../../../assets/icons/dark-grey/w2j__arrow.png"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        alt="{{ 'CONTACT.IMG.ARROW-RIGHT' | translate }}"
+        title="{{ 'CONTACT.IMG.ARROW-LEFT' | translate }}"
+      />
+    </div>
+  </div>
+</section>
+
+<section
+  tabindex="0"
+  class="w2j__img-parallax"
+  tabindex="0"
+  attr.aria-label="{{ 'CONTACT.IMG.PARALLAX' | translate }}"
+></section>
+
+<!-- FORM -->
+<section class="w2j__form" id="w2j__contact">
+  <div class="w2j__background-form">
+    <div class="w2j__form-header">
+      <h4 class="w2j__header-text w2j__header-form-left" tabindex="0">
+        {{ "CONTACT.FORM.HEADER-LEFT" | translate }}
+      </h4>
+      <h4 class="w2j__header-text w2j__header-form-right" tabindex="0">
+        {{ "CONTACT.FORM.HEADER-RIGHT" | translate }}
+      </h4>
+    </div>
+    <form
+      class="w2j__inputs"
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit(FormData.value)"
+    >
+      <label id="name" for="name">{{ "CONTACT.FORM.NAME" | translate }}</label>
+      <input
+        class="w2j__input-form"
+        type="text"
+        minlength="8"
+        minlength="256"
+        formControlName="name"
+        required
+        id="name"
+        tabindex="0"
+        minlength="8"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.NAME-PLACEHOLDER' | translate }}"
+      />
+      <div
+        *ngIf="
+          FormData.get('name')?.invalid &&
+          (FormData.get('name')?.dirty || FormData.get('name')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['minlength']">
+          {{ "CONTACT.FORM.FEEDBACK.NAME-LENGTH" | translate }}
+        </div>
+
+        <div tabindex="0" *ngIf="FormData.get('name')?.errors?.['required']">
+          {{ "CONTACT.FORM.FEEDBACK.NAME" | translate }}
+        </div>
+      </div>
+
+      <label id="phone" for="phone" tabindex="0">{{
+        "CONTACT.FORM.PHONE" | translate
+      }}</label>
+      <input
+        class="w2j__input-form"
+        type="text"
+        formControlName="phone"
+        required
+        mask="(00) 0 0000-0000 || (+00) 000 000 000"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.PHONE-PLACEHOLDER' | translate }}"
+      />
+      <div
+        *ngIf="
+          FormData.get('phone')?.invalid &&
+          (FormData.get('phone')?.dirty || FormData.get('phone')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('phone')?.errors?.['required']">
+          {{ "CONTACT.FORM.FEEDBACK.PHONE" | translate }}
+        </div>
+      </div>
+
+      <label for="email" tabindex="0">Email</label>
+      <input
+        class="w2j__input-form"
+        type="hidden"
+        id="email"
+        type="text"
+        formControlName="email"
+        required
+        placeholder="exemplo@w2j.com"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.EMAIL-PLACEHOLDER' | translate }}"
+      />
+
+      <div
+        *ngIf="
+          FormData.get('email')?.invalid &&
+          (FormData.get('email')?.dirty || FormData.get('email')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div tabindex="0" *ngIf="FormData.get('email')?.errors?.['required']">
+          {{ "CONTACT.FORM.FEEDBACK.EMAIL" | translate }}
+        </div>
+
+        <div tabindex="0" *ngIf="FormData.get('email')?.errors?.['email']">
+          {{ "CONTACT.FORM.FEEDBACK.EMAIL-FORMAT" | translate }}
+        </div>
+      </div>
+
+      <label for="message" tabindex="0">{{
+        "CONTACT.FORM.MESSAGE" | translate
+      }}</label>
+      <textarea
+        class="w2j__input-form w2j__input-message"
+        type="text"
+        id="message"
+        required
+        maxlength="256"
+        minlength="16"
+        formControlName="message"
+        tabindex="0"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
+        placeholder="{{ 'CONTACT.FORM.MESSAGE-PLACEHOLDER' | translate }}"
+      ></textarea>
+
+      <div
+        *ngIf="
+          FormData.get('message')?.invalid &&
+          (FormData.get('message')?.dirty || FormData.get('message')?.touched)
+        "
+        class="w2j__invalid-feedback"
+      >
+        <div
+          tabindex="0"
+          *ngIf="FormData.get('message')?.errors?.['minlength']"
+        >
+          {{ "CONTACT.FORM.FEEDBACK.MESSAGE-LENGTH" | translate }}
+        </div>
+
+        <div tabindex="0" *ngIf="FormData.get('message')?.errors?.['required']">
+          {{ "CONTACT.FORM.FEEDBACK.MESSAGE" | translate }}
+        </div>
+      </div>
+
+      <div class="w2j__send-form">
+        <button
+          class="w2j__btn-send submit"
+          type="submit"
+          value="submit"
+          tabindex="0"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="{{ 'CONTACT.FORM.SEND-BUTTON-TOOLTIP' | translate }}"
+          [disabled]="isLoading || FormData.invalid"
+          (click)="w2jSuccessModal.toggleModal()"
+        >
+          <span
+            *ngIf="isLoading"
+            class="spinner-border spinner-border-sm pb-2"
+          ></span>
+          <span *ngIf="!isLoading">{{
+            "CONTACT.FORM.SEND-BUTTON" | translate
+          }}</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- MODAL -->
+<w2j-modal #w2jSuccessModal>
+  <img
+    class="w2j__ok"
+    src="../../../assets/icons/dark-grey/w2j__ok.svg"
+    tabindex="0"
+    data-toggle="tooltip"
+    data-placement="left"
+    aria-live="assertive"
+    role="alert"
+    title="{{ 'CONTACT.FORM.MODAL-TEXT-1' | translate }}"
+    alt="{{ 'CONTACT.FORM.MODAL-TEXT-1' | translate }}"
+  />
+  <h6 class="w2j__text-modal">
+    <p tabindex="0">{{ "CONTACT.FORM.MODAL-TEXT-1" | translate }}</p>
+    <p tabindex="0">{{ "CONTACT.FORM.MODAL-TEXT-2" | translate }}</p>
+  </h6>
+</w2j-modal>

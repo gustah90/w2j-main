@@ -1,0 +1,110 @@
+{
+  "HEADER": {
+    "KNOW-US": "QUIENES SOMOS",
+    "SERVICES": "SERVICIOS",
+    "CONTACT": "CONTACTO",
+    "BURGUER-MENU": "Abrir Menu Lateral",
+    "LOGO-LABEL": "Logotipo, representación de un globo terrestre dentro de los caracteres W2J con una flecha sobre la letra W apuntando hacia la derecha, otra flecha debajo de la letra J apuntando hacia la izquierda y el término comercio internacional debajo de la letra W",
+    "ANCHOR": {
+      "HOME": "Escalar a la cima",
+      "KNOW-US": "Ir a la sección Quienes Somos",
+      "SERVICES": "Ir a la sección sobre nuestros Servicios",
+      "CONTACT": "Ir a la sección del Contacto"
+    },
+    "LANGUAGES": {
+      "PORTUGUESE": "Cambiar idioma al Portugués",
+      "SPANISH": "Cambiar idioma al Español",
+      "ENGLISH": "Cambiar idioma al Inglés"
+    }
+
+  },
+  "HOME": {
+    "BACKGROUND": "Imagen de fondo que contiene barcos en cola en un muelle",
+    "TITLE": "NOSOTROS SOMOS LA W2J COMERCIO INTERNACIONAL",
+    "CONTENT": "Una empresa creada para brindar asesoría en comercio internacional. Aquí presentamos las mejores soluciones de reducción de costos para sus importaciones, tanto en términos de logística como de impuestos, todo de manera legal y transparente. Somos un equipo altamente calificado y comprometido con hacer que su negocio sea viable y próspero.",
+    "BUTTON": "SEPA MAS",
+    "TOOLTIP": "Sepa mas"
+  },
+
+  "KNOW": {
+    "TEXT": {
+      "WORLD": "W2J Comércio Internacional, nació con el objetivo de reducir los costos de sus importaciones, estudiando el tema descubrió una forma ética, segura y eficiente de realizar operaciones de importación. Y por qué no extender dicho conocimiento al mercado nacional, brindando beneficios de reducción de costos y aumentando la participación de mercado. Entonces decidió ofrecer y compartir con el comercio internacional.",
+      "LOGISTIC": "En las importaciones los costos de impuestos, tasas y gastos aduaneros son muy altos, principalmente el ICMS que es el mayor costo de la cadena. Lo que podemos y haremos es reducir este y otros costos. ¿Quieres saber cómo? Contáctanos y te sorprenderás cuando recibas la planilla comparativa con tu última importación."
+    },
+    "IMG": {
+      "WORLD": "Image del globo terráqueo",
+      "LOGISTIC": "Image que representa la logística"
+    }
+  },
+
+  "SERVICES": {
+    "ONE": "Equipo de profesionales experimentados en el seguimiento de propuesta de importación por encargo.",
+    "ONE-LABEL": "Entrega a tiempo",
+    "TWO": "Análisis y orientación de las mejores aplicaciones de NCM para reducir impuestos en su negocio.",
+    "TWO-LABEL": "Las mejores solucione",
+    "THREE": "Transparencia en la aplicación de las mejores vías para reducir los costes fiscale.",
+    "THREE-LABEL": "Reducción de costos",
+    "FOUR": "Amplia red de socios que realiza su recolección, despacho y envío de su carga bajo nuestra gestión.",
+    "FOUR-LABEL": "Amplia red de socios",
+    "FIVE": "Entrega de resultados positivos y aumento de las ganancias reales de su negocio.",
+    "FIVE-LABEL": "Aumento de beneficios",
+    "SIX": "Nos encargamos de toda la burocracia de tus importaciones y exportaciones.",
+    "SIX-LABEL": "Menos burocracia"
+  },
+
+  "CONTACT": {
+    "ARTICLE": {
+      "VISION-TITLE": "Vista",
+      "VISION-CONTENT": "Obtener la confianza y credibilidad de nuestros clientes, inversionistas y socios como la mejor opción para operaciones de importación y exportación en Brasil. En dos años tendremos nuestra primera sucursal en el exterior. Brindar crecimiento ético, profesional, intelectual y financiero a nuestros empleados y socios.",
+      "MISSION-TITLE": "Misión",
+      "MISSION-CONTENT": "Ser parte integral del cliente importador o exportador, asesorando, administrando sus operaciones y haciendo prosperar sus negocios.",
+      "VALUE-TITLE": "Valores",
+      "VALUE-CONTENT": "Estamos comprometidos con la transparencia, la calidad en la toma de decisiones, buscando siempre los mejores resultados para nuestros clientes. Creemos que la transparencia, la sencillez y el sentido común guían mejor que la sofisticación y la complejidad. Trabajamos siempre para garantizar la mejor solución operativa para nuestros clientes."
+    },
+    "FORM": {
+      "HEADER-LEFT": "¡Lo que determina el precio es la consulta!",
+      "HEADER-RIGHT": "¡Entonces que ven a concertar una cita con nosotros!",
+      "NAME": "Nombre",
+      "PHONE": "Telefóno",
+      "MESSAGE": "Mensaje",
+      "NAME-PLACEHOLDER": "Introduce su nombre aquí",
+      "PHONE-PLACEHOLDER": "Introduce tu teléfono aquí",
+      "EMAIL-PLACEHOLDER": "ejemplo@w2j.com",
+      "MESSAGE-PLACEHOLDER": "Escribe tu mensaje aquí",
+      "SEND-BUTTON": "ENVIAR",
+      "SEND-BUTTON-TOOLTIP": "Enviar tus datos y la mensaje",
+      "MODAL": "Modal abierto",
+      "MODAL-TEXT-1": "Informaciones enviadas con éxito.",
+      "MODAL-TEXT-2": "¡Pronto nos pondremos en contacto con usted!",
+      "BTN-CLOSE": "Cerrar modal",
+
+      "FEEDBACK": {
+        "NAME": "Por favor ingresa tu nombre.",
+        "NAME-LENGTH": "El nombre debe contener al menos 8 caracteres.",
+        "PHONE": "Ingrese su código de área internacional y después su número de teléfono.",
+        "EMAIL": "Por favor, informe a su correo electrónico.",
+        "EMAIL-FORMAT": "Su correo electrónico deve estar como lo ejemplo: ejemplo@dominio",
+        "MESSAGE-LENGTH": "Su mensaje debe contener al menos 16 caracteres.",
+        "MESSAGE": "Por favor ingrese su mensaje.",
+        "TOAST-ERROR": "Su solicitud contiene errores. Por favor revise sus datos y vuelva a intentarlo."
+      }
+    },
+    "FOOTER": {
+      "ADDRESS-1": "Avenida Calama, 1460 - Sala E",
+      "ADDRESS-2": "Olaria / Porto Velho - RO 76801-276",
+      "MESSAGE": "CNPJ: 44.514.698/0001-39",
+      "ALL-RIGHTS": "Todo los derechos reservados."
+    },
+    "IMG": {
+      "ARROW-RIGHT": "Flecha a la derecha",
+      "ARROW-LEFT": "Flecha a la izquierda",
+      "ARROW-BACKGROUND": "Una flecha sobre la otra en el fondo",
+      "PARALLAX": "Image con effecto paralaje que contiene un avión, un barco, contenedores y un camión",
+      "WORLD-MAP": "Mapa del mundo en color gris",
+      "WHITE-LOGO": "Logomarca W2J en blanco",
+      "NET-FB": "Ir a la página del Facebbok de la W2J",
+      "NET-IN": "Ir a la página del Instagram de la W2J",
+      "NET-TW": "Ir a la página del Twitter de la W2J"
+    }
+  }
+}
