@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -17,7 +16,6 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
-=======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
@@ -60,4 +58,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
->>>>>>> 817879cb3e5b6f353703ec0af02bdfddac869241
