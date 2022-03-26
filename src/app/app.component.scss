@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .w2j__header-navigation {
+    margin-top: -12px;
+  }
+}
+
 .w2j__header-container.closed {
   @media (max-width: 770px) {
     display: flex;
