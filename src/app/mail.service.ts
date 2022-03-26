@@ -8,7 +8,7 @@ import { MailModel } from '../app//core/_contact/mail-model';
   providedIn: 'root',
 })
 export class MailService {
-  private api = 'https://formspree.io/f/xknybpyo';
+  private api = 'https://formspree.io/f/xyyopooj';
 
   constructor(private http: HttpClient) {}
 

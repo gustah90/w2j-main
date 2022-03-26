@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 24vw;
+    width: 32vw;
     border-bottom: unset;
     max-height: unset;
     position: fixed;
@@ -273,6 +273,9 @@
 }
 
 @media (max-width: 425px) {
+  .w2j__header-container {
+    padding: 0rem 0.5rem 2.5rem 0.5rem;
+  }
   .w2j__language-icon {
     height: 8vw !important;
   }

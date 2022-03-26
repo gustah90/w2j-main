@@ -101,6 +101,28 @@
   }
 }
 
+@media (max-width: 425px) {
+  .w2j__home-box {
+    width: 84vw !important;
+    padding: 0 0 24px !important;
+    top: 80px !important;
+  }
+
+  .w2j__home-title {
+    font-size: 3.2vw !important;
+  }
+
+  .w2j__home-content {
+    font-size: 2.8vw !important;
+  }
+
+  .w2j__btn-know-more {
+    margin-left: 8px !important;
+    margin-top: -4px !important;
+    font-size: 2.4vw !important;
+  }
+}
+
 @media (max-width: 320px) {
   .w2j__home-box {
     top: 80px !important;
