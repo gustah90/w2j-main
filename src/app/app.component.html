@@ -137,7 +137,9 @@
 
   <section [ngClass]="{ footerAtMenu: isOpened }">
     <div class="w2j__social-networks">
-      <a href="https://www.facebook.com/profile.php?id=100079332896426">
+      <a
+        href="https://www.facebook.com/W2J-Comercio-Internacional-101538785854926"
+      >
         <button
           class="w2j__btn-networks"
           data-toggle="tooltip"
@@ -197,10 +199,18 @@
       </h6>
       <h6 class="mt-1">
         Designed by
-        <a href="https://www.linkedin.com/in/alessandro-gois/"
+        <a
+          href="https://www.linkedin.com/in/alessandro-gois/"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="{{ 'CONTACT.FOOTER.ALESSANDRO' | translate }}"
           >Alessandro Góis</a
         >. Developed by
-        <a href="https://www.linkedin.com/in/ggustavo-henrique/"
+        <a
+          href="https://www.linkedin.com/in/ggustavo-henrique/"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="{{ 'CONTACT.FOOTER.GUSTAVO' | translate }}"
           >Gustavo Henrique</a
         >.<br />{{ "CONTACT.FOOTER.ALL-RIGHTS" | translate }}
       </h6>

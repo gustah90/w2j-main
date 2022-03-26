@@ -17,6 +17,7 @@
     .w2j__header-lateral {
       display: flex;
       flex-direction: column-reverse;
+      margin-top: 6px;
     }
 
     .w2j__logo {
@@ -40,7 +41,11 @@
 
 @media (max-width: 425px) {
   .w2j__header-navigation {
-    margin-top: -12px;
+    margin-top: -40px;
+  }
+
+  .w2j__header-path {
+    font-size: 1.7vw !important;
   }
 }
 
@@ -202,14 +207,14 @@
   text-align: center;
   font-size: 8px;
   margin-bottom: -32px;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .w2j__social-networks {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -48px;
+  margin-top: -54px;
 
   .w2j__btn-networks {
     border: none;
@@ -280,7 +285,7 @@
 
 @media (max-width: 425px) {
   .w2j__header-container {
-    padding: 0rem 0.5rem 2.5rem 0.5rem;
+    padding: 0rem 0.5rem 3.25rem 0.5rem;
   }
   .w2j__language-icon {
     height: 8vw !important;
