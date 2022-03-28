@@ -28,7 +28,7 @@
 
   "KNOW": {
     "TEXT": {
-      "WORLD": "W2J Comércio Internacional, nació con el objetivo de reducir los costos de sus importaciones, estudiando el tema descubrió una forma ética, segura y eficiente de realizar operaciones de importación. Y por qué no extender dicho conocimiento al mercado nacional, brindando beneficios de reducción de costos y aumentando la participación de mercado. Entonces decidió ofrecer y compartir con el comercio internacional.",
+      "WORLD": "W2J Comércio Internacional, nació con el objetivo de reducir los costos de sus importaciones, estudiando el tema descubrió una forma ética, segura y eficiente de realizar operaciones de importación. Y por qué no extender dicho conocimientos al mercado nacional, brindando beneficios de reducción de costos y aumentando la participación de mercado? Entonces decidió ofrecer y compartir con el comercio internacional.",
       "LOGISTIC": "En las importaciones los costos de impuestos, tasas y gastos aduaneros son muy altos, principalmente el ICMS que es el mayor costo de la cadena. Lo que podemos y haremos es reducir este y otros costos. ¿Quieres saber cómo? Contáctanos y te sorprenderás cuando recibas la planilla comparativa con tu última importación."
     },
     "IMG": {
@@ -62,8 +62,8 @@
       "VALUE-CONTENT": "Estamos comprometidos con la transparencia, la calidad en la toma de decisiones, buscando siempre los mejores resultados para nuestros clientes. Creemos que la transparencia, la sencillez y el sentido común guían mejor que la sofisticación y la complejidad. Trabajamos siempre para garantizar la mejor solución operativa para nuestros clientes."
     },
     "FORM": {
-      "HEADER-LEFT": "¡Lo que determina el precio es la consulta!",
-      "HEADER-RIGHT": "¡Entonces que ven a concertar una cita con nosotros!",
+      "HEADER-LEFT": "¡Lo que determina el precio es el costo!",
+      "HEADER-RIGHT": "¡Entonces, que ven a concertar una cita con nosotros!",
       "NAME": "Nombre",
       "PHONE": "Telefóno",
       "MESSAGE": "Mensaje",

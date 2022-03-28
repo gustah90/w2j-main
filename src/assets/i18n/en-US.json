@@ -7,9 +7,9 @@
     "LOGO-LABEL": "Logo presenting a globe within the characters W2J with an arrow above the letter W pointing to the right, another arrow below the letter J pointing to the left and the term international trade below the letter W",
     "ANCHOR": {
       "HOME": "Climb to the top",
-      "KNOW-US": "Go to the Who We Are section",
+      "KNOW-US": "Go to the Know Us section",
       "SERVICES": "Go to the Services section",
-      "CONTACT": "Go to the Contact Us section"
+      "CONTACT": "Go to the Contact section"
     },
     "LANGUAGES": {
       "PORTUGUESE": "Change language to Portuguese",
@@ -28,7 +28,7 @@
 
   "KNOW": {
     "TEXT": {
-      "WORLD": "W2J Comércio Internacional, born with the purpose of reducing the costs of your importsand, studying the subject, discovered a way an ethical and safe way to carry out import and export operations. And what better way than to extend this knowledge to the national market, providing cost reduction benefits and increasing market share. So we decided to share to offer and share with international trade.",
+      "WORLD": "W2J Comércio Internacional, born with the purpose of reducing the costs of your importsand, studying the subject, discovered a way an ethical and safe way to carry out import and export operations. And what better way than to extend this knowledges to the national market, providing cost reduction benefits and increasing market share? So, we decided to share to offer and share with international trade.",
       "LOGISTIC": "in the import market, the costs of taxes, fees and customs expenses are very high, mainly ICMS, which is the biggest cost in the chain. What we can and will do is reduce this and other costs. Want to know how? Contact us and you will be surprised when you receive the comparative spreadsheet between your current and your last import."
     },
     "IMG": {
@@ -55,15 +55,15 @@
   "CONTACT": {
     "ARTICLE": {
       "VISION-TITLE": "Vision",
-      "VISION-CONTENT": "Obtain the trust and credibility of our customers, investors and partners showing the best options for your imports and exports operations in Brazil. In two years we will have our first branch abroad. We will provide ethical, professional, intellectual and financial growth to our employees and partners.",
+      "VISION-CONTENT": "Obtain the trust and credibility of our customers, investors and partners showing the best options for your imports and exports operations in Brazil. In two years, we will have our first branch abroad. We will provide ethical, professional, intellectual and financial growth to our employees and partners.",
       "MISSION-TITLE": "Mission",
       "MISSION-CONTENT": "To be an integral part of the customer with regard to import and export, advising and managing their operations also enabling their business to be prosperous.",
       "VALUE-TITLE": "Values",
       "VALUE-CONTENT": "We are committed to transparency, quality in decision making, always aiming at the best results for our customers. We believe that transparency, simplicity and common sense guide better than sophistication and complexity. We always work to ensure the best operational solution for our customers."
     },
     "FORM": {
-      "HEADER-LEFT": "It is the query that determines the value!",
-      "HEADER-RIGHT": "So come make an appointment with us!",
+      "HEADER-LEFT": "It is the cost that determines the value!",
+      "HEADER-RIGHT": "So, come make an appointment with us!",
       "NAME": "Name",
       "PHONE": "Phone",
       "MESSAGE": "Message",
