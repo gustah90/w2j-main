@@ -2,6 +2,8 @@
 A Landing Page using Angular 13, HTML, SCSS, Bootstrap, Typescript and Javascript
 =======
 # W2j
+Landing Page published at: http://www.w2jcomerciointernacional.com.br
+=======
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
